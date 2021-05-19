@@ -1,13 +1,34 @@
 body {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  /* box-sizing: border-box;
+  border: 200px solid green; */
+  /* height: 100vh; */
+  /* width: 100vw; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+
+/* css 100vw issues and fix
+    https://www.smashingmagazine.com/2021/04/css-overflow-issues/#:~:text=Viewport%20Units,won't%20cause%20horizontal%20scroll.&text=On%20Windows%2C%20scrollbars%20are%20always,default%2C%20so%20overflow%20will%20occur.
+    https://stackoverflow.com/questions/23367345/100vw-causing-horizontal-overflow-but-only-if-more-than-one/23367686
+*/
+.page {
+  box-sizing: border-box;
+  border: 2px solid blue;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 400%;
 }
