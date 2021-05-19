@@ -1,7 +1,11 @@
+import Zoom from 'react-reveal/Zoom';
+
 const Hi = () => {
     return (  
         <div className="page">
-            <h1>Hi</h1>
+            <Zoom>
+                <h1>Hi</h1>
+            </Zoom>
         </div>
     );
 }
