@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Bavro";
+  src: url(./fonts/Bavro-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Axis";
+  src: url(./fonts/Axis-Extrabold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "SFPro";
+  src: url(./fonts/SFProDisplay-Regular.ttf) format("truetype");
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -8,7 +23,6 @@ body {
     https://stackoverflow.com/questions/23367345/100vw-causing-horizontal-overflow-but-only-if-more-than-one/23367686
 */
 .section {
-  background-color: #f4f4f4;
   height: 100vh;
   width: 100vw;
   max-width: 100%;
@@ -19,13 +33,26 @@ body {
 
 .header {
   flex-direction: column;
-  background-color: burlywood;
+  background-color: rgb(115, 158, 223);
+  color: white;
+  font-family: Axis;
+}
+
+.header h1 {
+  font-size: 500%;
+  margin: 0px;
+}
+
+.header h2 {
+  font-size: 110%;
 }
 
 .hi {
+  background-color: rgb(233, 241, 255);
   position: sticky;
   top: 0px;
   opacity: 0;
+  font-family: SFPro;
 }
 
 @keyframes fade-in {
