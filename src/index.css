@@ -3,27 +3,26 @@ body {
   margin: 0;
 }
 
-.header {
-  height: 100vh;
-  width: 100vw;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 /* css 100vw issues and fix
     https://www.smashingmagazine.com/2021/04/css-overflow-issues/#:~:text=Viewport%20Units,won't%20cause%20horizontal%20scroll.&text=On%20Windows%2C%20scrollbars%20are%20always,default%2C%20so%20overflow%20will%20occur.
     https://stackoverflow.com/questions/23367345/100vw-causing-horizontal-overflow-but-only-if-more-than-one/23367686
 */
-.page {
+.section {
+  background-color: #f4f4f4;
   height: 100vh;
   width: 100vw;
   max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header {
+  flex-direction: column;
+  background-color: burlywood;
+}
+
+.hi {
   position: sticky;
   top: 0px;
   opacity: 0;
@@ -39,9 +38,9 @@ body {
   }
 }
 
-.page.fade-in {
+.fade-in {
   animation-name: fade-in;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-fill-mode: forwards;
 }
 

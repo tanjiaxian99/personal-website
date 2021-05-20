@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className="header">
+    <header className="section header">
       <h1>Tan Jia Xian</h1>
       <div></div>
       <h3>Year 2 Computer Science, NUS</h3>
