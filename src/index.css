@@ -3,15 +3,14 @@ body {
   margin: 0;
 }
 
-.container {
-  /* box-sizing: border-box;
-  border: 200px solid green; */
-  /* height: 100vh; */
-  /* width: 100vw; */
-  /* display: flex;
+.header {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; */
+  flex-direction: column;
 }
 
 /* css 100vw issues and fix
@@ -19,8 +18,6 @@ body {
     https://stackoverflow.com/questions/23367345/100vw-causing-horizontal-overflow-but-only-if-more-than-one/23367686
 */
 .page {
-  box-sizing: border-box;
-  /* border: 2px solid blue; */
   height: 100vh;
   width: 100vw;
   max-width: 100%;
@@ -32,7 +29,7 @@ body {
   opacity: 0;
 }
 
-@keyframes fade {
+@keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -42,9 +39,9 @@ body {
   }
 }
 
-.page.fade {
-  animation-name: fade;
-  animation-duration: 5s;
+.page.fade-in {
+  animation-name: fade-in;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
