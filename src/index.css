@@ -20,13 +20,32 @@ body {
 */
 .page {
   box-sizing: border-box;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   height: 100vh;
   width: 100vw;
   max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0px;
+  opacity: 0;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.page.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
 }
 
 h1 {
