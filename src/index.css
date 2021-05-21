@@ -16,6 +16,11 @@
 body {
   padding: 0;
   margin: 0;
+  font-size: large;
+}
+
+h1 {
+  font-size: 300%;
 }
 
 /* css 100vw issues and fix
@@ -29,10 +34,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .header {
-  flex-direction: column;
   background-color: rgb(115, 158, 223);
   color: white;
   font-family: Axis;
@@ -71,6 +76,47 @@ body {
   animation-fill-mode: forwards;
 }
 
-h1 {
-  font-size: 400%;
+.exp {
+  margin: 5px 5%;
+  align-self: flex-start;
+}
+
+.exp .logos {
+  display: flex;
+}
+
+.exp img {
+  height: 40px;
+  margin: 0 15px;
+}
+
+.logo {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0px 20px;
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.5);
+}
+
+.exp span[data-title] {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.exp span[data-title]:hover:after {
+  content: attr(data-title);
+  position: absolute;
+  top: 120%;
+  color: white;
+  background-color: #777777;
+  font-size: small;
+  padding: 5px 10px;
+  border-radius: 10px;
 }

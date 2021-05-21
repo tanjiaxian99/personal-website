@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Experience from "./Experience";
 import python from "../logos/python.svg";
 import numpy from "../logos/numpy.svg";
 import pandas from "../logos/pandas.svg";
@@ -6,9 +7,16 @@ import scikit from "../logos/scikit-learn.svg";
 import cSharp from "../logos/c-sharp.svg";
 import unity from "../logos/unity.svg";
 import photon from "../logos/photon.png";
+import html from "../logos/html-5.svg";
+import css from "../logos/css-3.svg";
+import javascript from "../logos/javascript.svg";
+import reactLogo from "../logos/react.svg";
+import mongoDB from "../logos/mongodb.svg";
+import express from "../logos/express.svg";
+import node from "../logos/nodejs.svg";
 
 const Portfolio = () => {
-  const [exp, setExp] = useState([
+  const [exps, setExp] = useState([
     {
       title: "Data Analyst",
       company: "Defence Science and Technology Agency (DSTA)",
@@ -31,11 +39,28 @@ const Portfolio = () => {
       ],
       logos: [cSharp, unity, photon],
     },
+    {
+      title: "Personal Website",
+      company: "",
+      date: "May 2021 to July 2021",
+      pointers: ["Supports real-time multiplayer gameplay"],
+      logos: [html, css, javascript, reactLogo],
+    },
+    {
+      title: "NUSFitness",
+      company: "",
+      date: "May 2021 to July 2021",
+      pointers: ["Supports real-time multiplayer gameplay"],
+      logos: [html, css, javascript, mongoDB, express, reactLogo, node],
+    },
   ]);
 
   return (
-    <div>
-      <p></p>
+    <div className="section">
+      <h2>Portfolio</h2>
+      {exps.map((exp) => (
+        <Experience key={exp.title.slice(0, 3)} exp={exp} />
+      ))}
     </div>
   );
 };
