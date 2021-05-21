@@ -14,7 +14,7 @@ const Experience = ({ exp }) => {
           let logoName = logo.split(".")[0].split("/")[3];
           logoName = logoName.charAt(0).toUpperCase() + logoName.slice(1);
           return (
-            <div className="logo">
+            <div key={logoName.slice(3)} className="logo">
               <span data-title={logoName}>
                 <img src={logo} alt={logoName} aria-label={logoName} />
               </span>

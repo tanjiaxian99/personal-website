@@ -37,6 +37,10 @@ h1 {
   flex-direction: column;
 }
 
+.section p {
+  margin: 20px 5%;
+}
+
 .header {
   background-color: rgb(115, 158, 223);
   color: white;
@@ -76,12 +80,14 @@ h1 {
   animation-fill-mode: forwards;
 }
 
-.exp {
-  margin: 5px 5%;
-  align-self: flex-start;
+.profile-pic {
+  border-radius: 50%;
 }
 
-.exp .logos {
+.container {
+  margin: 10px 5%;
+}
+.logos {
   display: flex;
 }
 

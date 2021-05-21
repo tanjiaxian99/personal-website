@@ -56,7 +56,7 @@ const Portfolio = () => {
   ]);
 
   return (
-    <div className="section">
+    <div className="container">
       <h2>Portfolio</h2>
       {exps.map((exp) => (
         <Experience key={exp.title.slice(0, 3)} exp={exp} />
