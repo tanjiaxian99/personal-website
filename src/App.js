@@ -9,18 +9,25 @@ function App() {
   // State to track whether a page should show
   const [show, setShow] = useState({
     p1: false,
+    p2: false,
   });
 
   // References to pages
-  const p1Ref = useRef(null);
+  const p1Ref = useRef(null),
+    p2Ref = useRef(null);
 
   useEffect(() => {
     function callback(entries) {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) {
-          return;
+          if (p1Ref.current == entry.target) {
+            setShow((state) => ({ ...state, p1: false }));
+          }
+        } else {
+          if (p1Ref.current == entry.target) {
+            setShow((state) => ({ ...state, p1: true }));
+          }
         }
-        setShow({ p1: true });
       });
     }
 
@@ -28,13 +35,14 @@ function App() {
       threshold: 1,
     });
     observer.observe(p1Ref.current);
-  }, [p1Ref]);
+    observer.observe(p2Ref.current);
+  }, [p1Ref, p2Ref]);
 
   return (
     <>
       <Header />
       <Hi animate={show.p1} ref={p1Ref} />
-      <Intro />
+      <Intro animate={show.p2} ref={p2Ref} />
       <Portfolio />
     </>
   );

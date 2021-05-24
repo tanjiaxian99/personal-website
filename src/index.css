@@ -56,14 +56,6 @@ h1 {
   font-size: 110%;
 }
 
-.hi {
-  background-color: rgb(233, 241, 255);
-  position: sticky;
-  top: 0px;
-  opacity: 0;
-  font-family: SFPro;
-}
-
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -74,10 +66,54 @@ h1 {
   }
 }
 
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+/* 
+  Using fade-in for both .fade-in and .fade-out:  
+  When fade-in is applied, the animation fade-in is called. When fade-out is applied, it also
+  uses the same animation fade-in. But the animation has already been played, so it will not play
+  until it has been restarted.
+
+  https://stackoverflow.com/questions/43575336/cant-use-the-same-animation-in-reverse-for-class-toggle/43575547
+*/
+
+.hi {
+  background-color: rgb(233, 241, 255);
+  position: sticky;
+  top: 0px;
+  font-family: SFPro;
+  transition: opacity 2s;
+}
+
 .fade-in {
-  animation-name: fade-in;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+@keyframes slide-up {
+}
+
+.slide-up {
+  overflow-y: hidden;
+  max-height: 100%;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.slide-up.closed {
+  max-height: 0;
 }
 
 .profile-pic {

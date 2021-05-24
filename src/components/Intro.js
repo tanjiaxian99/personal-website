@@ -1,9 +1,15 @@
+import React from "react";
 import profilePic from "../images/profile-pic.jpg";
 
-const Intro = () => {
+const Intro = React.forwardRef(({ animate }, ref) => {
   return (
     <div className="section">
-      <img src={profilePic} alt="Tan Jia Xian" className="profile-pic" />
+      <img
+        src={profilePic}
+        alt="Tan Jia Xian"
+        className="profile-pic"
+        ref={ref}
+      />
       <p>
         I am a Jia Xian, a Year 2 Computer Science undergraduate at the National
         University of Singapore. Since young, I have always had an appetite and
@@ -21,6 +27,6 @@ const Intro = () => {
       </p>
     </div>
   );
-};
+});
 
 export default Intro;
