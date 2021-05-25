@@ -2,7 +2,7 @@ import React from "react";
 
 const Hi = React.forwardRef(({ animate }, ref) => {
   return (
-    <div style={{ height: "1500px" }}>
+    <div style={{ height: "1200px" }}>
       <div
         className={`section hi ${animate ? "fade-in" : "fade-out"}`}
         ref={ref}

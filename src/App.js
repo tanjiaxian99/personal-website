@@ -8,24 +8,38 @@ import Portfolio from "./components/Portfolio.js";
 function App() {
   // State to track whether a page should show
   const [show, setShow] = useState({
-    p1: false,
-    p2: false,
+    hiPage: false,
+    introPageProfilePic: false,
+    introPageP1: false,
+    introPageP2: false,
   });
 
   // References to pages
-  const p1Ref = useRef(null),
-    p2Ref = useRef(null);
+  const hiPageRef = useRef(null),
+    introPageRef = useRef(null);
 
   useEffect(() => {
     function callback(entries) {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) {
-          if (p1Ref.current == entry.target) {
-            setShow((state) => ({ ...state, p1: false }));
+          if (entry.target === hiPageRef.current) {
+            setShow((state) => ({ ...state, hiPage: false }));
+          } else if (entry.target === introPageRef.current.profilePic) {
+            setShow((state) => ({ ...state, introPageProfilePic: false }));
+          } else if (entry.target === introPageRef.current.p1) {
+            setShow((state) => ({ ...state, introPageP1: false }));
+          } else if (entry.target === introPageRef.current.p2) {
+            setShow((state) => ({ ...state, introPageP2: false }));
           }
         } else {
-          if (p1Ref.current == entry.target) {
-            setShow((state) => ({ ...state, p1: true }));
+          if (entry.target === hiPageRef.current) {
+            setShow((state) => ({ ...state, hiPage: true }));
+          } else if (entry.target === introPageRef.current.profilePic) {
+            setShow((state) => ({ ...state, introPageProfilePic: true }));
+          } else if (entry.target === introPageRef.current.p1) {
+            setShow((state) => ({ ...state, introPageP1: true }));
+          } else if (entry.target === introPageRef.current.p2) {
+            setShow((state) => ({ ...state, introPageP2: true }));
           }
         }
       });
@@ -34,15 +48,22 @@ function App() {
     const observer = new IntersectionObserver(callback, {
       threshold: 1,
     });
-    observer.observe(p1Ref.current);
-    observer.observe(p2Ref.current);
-  }, [p1Ref, p2Ref]);
+    observer.observe(hiPageRef.current);
+    observer.observe(introPageRef.current.profilePic);
+    observer.observe(introPageRef.current.p1);
+    observer.observe(introPageRef.current.p2);
+  }, [hiPageRef, introPageRef]);
 
   return (
     <>
       <Header />
-      <Hi animate={show.p1} ref={p1Ref} />
-      <Intro animate={show.p2} ref={p2Ref} />
+      <Hi animate={show.hiPage} ref={hiPageRef} />
+      <Intro
+        animateProfilePic={show.introPageProfilePic}
+        animateP1={show.introPageP1}
+        animateP2={show.introPageP2}
+        ref={introPageRef}
+      />
       <Portfolio />
     </>
   );
