@@ -13,6 +13,9 @@ function App() {
     introPageP1: false,
     introPageP2: false,
     e1: false,
+    e2: false,
+    e3: false,
+    e4: false,
   });
 
   // References to pages
@@ -22,6 +25,7 @@ function App() {
 
   const callback = (entries) => {
     entries.forEach((entry) => {
+      console.log(entry);
       if (!entry.isIntersecting) {
         if (entry.target === hiPageRef.current) {
           setShow((state) => ({ ...state, hiPage: false }));
@@ -33,6 +37,12 @@ function App() {
           setShow((state) => ({ ...state, introPageP2: false }));
         } else if (entry.target === portfolioPageRef.current.e1) {
           setShow((state) => ({ ...state, e1: false }));
+        } else if (entry.target === portfolioPageRef.current.e2) {
+          setShow((state) => ({ ...state, e2: false }));
+        } else if (entry.target === portfolioPageRef.current.e3) {
+          setShow((state) => ({ ...state, e3: false }));
+        } else if (entry.target === portfolioPageRef.current.e4) {
+          setShow((state) => ({ ...state, e4: false }));
         }
       } else {
         if (entry.target === hiPageRef.current) {
@@ -45,6 +55,12 @@ function App() {
           setShow((state) => ({ ...state, introPageP2: true }));
         } else if (entry.target === portfolioPageRef.current.e1) {
           setShow((state) => ({ ...state, e1: true }));
+        } else if (entry.target === portfolioPageRef.current.e2) {
+          setShow((state) => ({ ...state, e2: true }));
+        } else if (entry.target === portfolioPageRef.current.e3) {
+          setShow((state) => ({ ...state, e3: true }));
+        } else if (entry.target === portfolioPageRef.current.e4) {
+          setShow((state) => ({ ...state, e4: true }));
         }
       }
     });
@@ -60,6 +76,9 @@ function App() {
     observer.observe(introPageRef.current.p1);
     observer.observe(introPageRef.current.p2);
     observer.observe(portfolioPageRef.current.e1);
+    observer.observe(portfolioPageRef.current.e2);
+    observer.observe(portfolioPageRef.current.e3);
+    observer.observe(portfolioPageRef.current.e4);
   }, [hiPageRef, introPageRef, portfolioPageRef]);
 
   return (
@@ -72,7 +91,10 @@ function App() {
         animateP2={show.introPageP2}
         ref={introPageRef}
       />
-      <Portfolio animateE1={show.e1} ref={portfolioPageRef} />
+      <Portfolio
+        animateArr={[show.e1, show.e2, show.e3, show.e4]}
+        ref={portfolioPageRef}
+      />
     </>
   );
 }

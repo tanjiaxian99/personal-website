@@ -3,7 +3,7 @@ import React from "react";
 const Experience = React.forwardRef(({ exp, animate }, ref) => {
   return (
     <div className={"exp slide-container"} ref={ref}>
-      <div class={animate ? "slide-right" : "slide-left"}>
+      <div className={animate ? "slide-right" : "slide-left"}>
         <h3>{exp.title}</h3>
         <h4>{exp.company}</h4>
         <h5>{exp.date}</h5>
