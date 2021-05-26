@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useRef, useImperativeHandle } from "react";
 import Experience from "./Experience";
 import python from "../logos/python.svg";
 import numpy from "../logos/numpy.svg";
@@ -15,7 +15,15 @@ import mongoDB from "../logos/mongodb.svg";
 import express from "../logos/express.svg";
 import node from "../logos/nodejs.svg";
 
-const Portfolio = () => {
+const Portfolio = React.forwardRef(({ animateE1 }, ref) => {
+  const e1Ref = useRef();
+
+  useImperativeHandle(ref, () => ({
+    get e1() {
+      return e1Ref.current;
+    },
+  }));
+
   const [exps, setExp] = useState([
     {
       title: "Data Analyst",
@@ -58,11 +66,17 @@ const Portfolio = () => {
   return (
     <div className="container">
       <h2>Portfolio</h2>
-      {exps.map((exp) => (
-        <Experience key={exp.title.slice(0, 3)} exp={exp} />
-      ))}
+      <Experience
+        key={exps[0].title.slice(0, 3)}
+        exp={exps[0]}
+        animate={animateE1}
+        ref={e1Ref}
+      />
+      {/* {exps.map((exp) => (
+        <Experience key={exp.title.slice(0, 3)} exp={exp} ref={e1Ref} />
+      ))} */}
     </div>
   );
-};
+});
 
 export default Portfolio;

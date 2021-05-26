@@ -48,7 +48,7 @@ const Intro = React.forwardRef(
           <p className={animateP2 ? "slide-up" : "slide-down"}>
             I delved into projects that involved solving problems that were near
             and dear to me. I found myself approaching these problems with the
-            same tenacity as I had when I was f irst solving maths problems in
+            same tenacity as I had when I was first solving maths problems in
             primary school. There are still many problems out there in the
             world, and it is my hope that one day, I am sufficiently capable to
             solve one of them.

@@ -12,47 +12,55 @@ function App() {
     introPageProfilePic: false,
     introPageP1: false,
     introPageP2: false,
+    e1: false,
   });
 
   // References to pages
   const hiPageRef = useRef(null),
-    introPageRef = useRef(null);
+    introPageRef = useRef(null),
+    portfolioPageRef = useRef(null);
+
+  const callback = (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        if (entry.target === hiPageRef.current) {
+          setShow((state) => ({ ...state, hiPage: false }));
+        } else if (entry.target === introPageRef.current.profilePic) {
+          setShow((state) => ({ ...state, introPageProfilePic: false }));
+        } else if (entry.target === introPageRef.current.p1) {
+          setShow((state) => ({ ...state, introPageP1: false }));
+        } else if (entry.target === introPageRef.current.p2) {
+          setShow((state) => ({ ...state, introPageP2: false }));
+        } else if (entry.target === portfolioPageRef.current.e1) {
+          setShow((state) => ({ ...state, e1: false }));
+        }
+      } else {
+        if (entry.target === hiPageRef.current) {
+          setShow((state) => ({ ...state, hiPage: true }));
+        } else if (entry.target === introPageRef.current.profilePic) {
+          setShow((state) => ({ ...state, introPageProfilePic: true }));
+        } else if (entry.target === introPageRef.current.p1) {
+          setShow((state) => ({ ...state, introPageP1: true }));
+        } else if (entry.target === introPageRef.current.p2) {
+          setShow((state) => ({ ...state, introPageP2: true }));
+        } else if (entry.target === portfolioPageRef.current.e1) {
+          setShow((state) => ({ ...state, e1: true }));
+        }
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(callback, {
+    threshold: 1,
+  });
 
   useEffect(() => {
-    function callback(entries) {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-          if (entry.target === hiPageRef.current) {
-            setShow((state) => ({ ...state, hiPage: false }));
-          } else if (entry.target === introPageRef.current.profilePic) {
-            setShow((state) => ({ ...state, introPageProfilePic: false }));
-          } else if (entry.target === introPageRef.current.p1) {
-            setShow((state) => ({ ...state, introPageP1: false }));
-          } else if (entry.target === introPageRef.current.p2) {
-            setShow((state) => ({ ...state, introPageP2: false }));
-          }
-        } else {
-          if (entry.target === hiPageRef.current) {
-            setShow((state) => ({ ...state, hiPage: true }));
-          } else if (entry.target === introPageRef.current.profilePic) {
-            setShow((state) => ({ ...state, introPageProfilePic: true }));
-          } else if (entry.target === introPageRef.current.p1) {
-            setShow((state) => ({ ...state, introPageP1: true }));
-          } else if (entry.target === introPageRef.current.p2) {
-            setShow((state) => ({ ...state, introPageP2: true }));
-          }
-        }
-      });
-    }
-
-    const observer = new IntersectionObserver(callback, {
-      threshold: 1,
-    });
     observer.observe(hiPageRef.current);
     observer.observe(introPageRef.current.profilePic);
     observer.observe(introPageRef.current.p1);
     observer.observe(introPageRef.current.p2);
-  }, [hiPageRef, introPageRef]);
+    observer.observe(portfolioPageRef.current.e1);
+  }, [hiPageRef, introPageRef, portfolioPageRef]);
 
   return (
     <>
@@ -64,7 +72,7 @@ function App() {
         animateP2={show.introPageP2}
         ref={introPageRef}
       />
-      <Portfolio />
+      <Portfolio animateE1={show.e1} ref={portfolioPageRef} />
     </>
   );
 }
