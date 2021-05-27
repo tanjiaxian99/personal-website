@@ -25,7 +25,6 @@ function App() {
 
   const callback = (entries) => {
     entries.forEach((entry) => {
-      console.log(entry);
       if (!entry.isIntersecting) {
         if (entry.target === hiPageRef.current) {
           setShow((state) => ({ ...state, hiPage: false }));
@@ -66,19 +65,22 @@ function App() {
     });
   };
 
-  const observer = new IntersectionObserver(callback, {
+  const observerPartial = new IntersectionObserver(callback, {
+    threshold: 0.7,
+  });
+  const observerFull = new IntersectionObserver(callback, {
     threshold: 1,
   });
 
   useEffect(() => {
-    observer.observe(hiPageRef.current);
-    observer.observe(introPageRef.current.profilePic);
-    observer.observe(introPageRef.current.p1);
-    observer.observe(introPageRef.current.p2);
-    observer.observe(portfolioPageRef.current.e1);
-    observer.observe(portfolioPageRef.current.e2);
-    observer.observe(portfolioPageRef.current.e3);
-    observer.observe(portfolioPageRef.current.e4);
+    observerFull.observe(hiPageRef.current);
+    observerFull.observe(introPageRef.current.profilePic);
+    observerFull.observe(introPageRef.current.p1);
+    observerFull.observe(introPageRef.current.p2);
+    observerPartial.observe(portfolioPageRef.current.e1);
+    observerPartial.observe(portfolioPageRef.current.e2);
+    observerPartial.observe(portfolioPageRef.current.e3);
+    observerPartial.observe(portfolioPageRef.current.e4);
   }, [hiPageRef, introPageRef, portfolioPageRef]);
 
   return (

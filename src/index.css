@@ -1,3 +1,5 @@
+/* NEW FONTS */
+
 @font-face {
   font-family: "Bavro";
   src: url(./fonts/Bavro-Regular.otf) format("opentype");
@@ -13,52 +15,140 @@
   src: url(./fonts/SFProDisplay-Regular.ttf) format("truetype");
 }
 
+/* GENERAL STYLES */
+
+html {
+  /* font-size: 16px;
+  line-height: 1.6; */
+  /* background-color: rgb(233, 241, 255); */
+  color: #1d1d1f;
+  font-size: 17px;
+  line-height: 1.47059;
+}
+
 body {
   padding: 0;
   margin: 0;
   font-family: SFPro;
-  font-size: large;
-  background-color: rgb(233, 241, 255);
+  letter-spacing: -0.022rem;
 }
 
 h1 {
-  font-size: 300%;
+  font-size: 5rem;
+  margin: 0px;
 }
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+/* UTILITIES */
 
 /* css 100vw issues and fix
     https://www.smashingmagazine.com/2021/04/css-overflow-issues/#:~:text=Viewport%20Units,won't%20cause%20horizontal%20scroll.&text=On%20Windows%2C%20scrollbars%20are%20always,default%2C%20so%20overflow%20will%20occur.
     https://stackoverflow.com/questions/23367345/100vw-causing-horizontal-overflow-but-only-if-more-than-one/23367686
 */
-.section {
+.viewport-fit {
   height: 100vh;
   width: 100vw;
   max-width: 100%;
+}
+
+.flex-column {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
-.section p {
+.flex-left {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.sticky-box {
+  background-color: rgb(233, 241, 255);
+  position: sticky;
+  top: 0px;
+}
+
+.sticky-box-container {
+  height: 1200px;
+}
+
+.justify-text {
   margin: 20px 5%;
   text-align: justify;
 }
 
+.rounded-img {
+  border-radius: 50%;
+}
+
+.margin-container {
+  margin: 2% 5%;
+}
+
+.hover-img-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0px 20px;
+  transition: transform 0.3s;
+}
+
+.hover-img-container:hover {
+  transform: scale(1.5);
+}
+
+span[data-hover-title] {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+span[data-hover-title]:hover:after {
+  content: attr(data-hover-title);
+  position: absolute;
+  top: 120%;
+  padding: 5px 10px;
+  border-radius: 100px;
+  color: white;
+  background-color: #777777;
+  font-size: small;
+}
+
+/* SITEWIDE */
 .header {
   background-color: rgb(115, 158, 223);
   color: white;
   font-family: Axis;
 }
 
-.header h1 {
-  font-size: 500%;
-  margin: 0px;
+.logo-container {
+  display: flex;
+  margin: 3% 0;
 }
 
-.header h2 {
-  font-size: 110%;
+.logo {
+  height: 50px;
+  margin: 0 15px;
 }
 
+/* Animations */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -79,20 +169,7 @@ h1 {
   }
 }
 
-/* 
-  Using fade-in for both .fade-in and .fade-out:  
-  When fade-in is applied, the animation fade-in is called. When fade-out is applied, it also
-  uses the same animation fade-in. But the animation has already been played, so it will not play
-  until it has been restarted.
-
-  https://stackoverflow.com/questions/43575336/cant-use-the-same-animation-in-reverse-for-class-toggle/43575547
-*/
-
-.hi {
-  background-color: rgb(233, 241, 255);
-  position: sticky;
-  top: 0px;
-  font-family: SFPro;
+.fade {
   transition: opacity 2s;
 }
 
@@ -104,79 +181,48 @@ h1 {
   opacity: 0;
 }
 
+/* 
+  Using fade-in for both .fade-in and .fade-out:  
+  When fade-in is applied, the animation fade-in is called. When fade-out is applied, it also
+  uses the same animation fade-in. But the animation has already been played, so it will not play
+  until it has been restarted.
+
+  https://stackoverflow.com/questions/43575336/cant-use-the-same-animation-in-reverse-for-class-toggle/43575547
+*/
+
 .slide-container {
   overflow: hidden;
-  color: rgb(90, 90, 90);
+}
+
+.slide {
+  transition: all 0.7s cubic-bezier(0, 1, 0.5, 1);
 }
 
 .slide-up {
   top: 0%;
   position: relative;
-  transition: all 0.7s cubic-bezier(0, 1, 0.5, 1);
 }
 
 .slide-down {
   top: 100%;
   position: relative;
-  transition: all 0.7s cubic-bezier(0, 1, 0.5, 1);
-}
-
-.profile-pic {
-  border-radius: 50%;
-}
-
-.container {
-  margin: 10px 5%;
 }
 
 .slide-right {
   right: 0%;
   position: relative;
-  transition: all 0.7s cubic-bezier(0, 1, 0.5, 1);
 }
 
 .slide-left {
   right: 100%;
   position: relative;
-  transition: all 0.7s cubic-bezier(0, 1, 0.5, 1);
 }
 
-.logos {
-  display: flex;
+/* SKINS */
+.dark-grey {
+  color: rgb(90, 90, 90);
 }
 
-.exp img {
-  height: 40px;
-  margin: 0 15px;
-}
-
-.logo {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  padding: 0px 20px;
-  transition: transform 0.3s;
-}
-
-.logo:hover {
-  transform: scale(1.5);
-}
-
-.exp span[data-title] {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.exp span[data-title]:hover:after {
-  content: attr(data-title);
-  position: absolute;
-  top: 120%;
-  color: white;
-  background-color: #777777;
-  font-size: small;
-  padding: 5px 10px;
-  border-radius: 10px;
+.font-medium {
+  font-size: 1.3rem;
 }

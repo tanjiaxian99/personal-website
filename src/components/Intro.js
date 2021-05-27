@@ -22,19 +22,23 @@ const Intro = React.forwardRef(
     }));
 
     return (
-      <div className="section">
+      <div className="viewport-fit flex-center flex-column">
         <div className="slide-container" ref={profilePicRef}>
           <img
             src={profilePic}
             alt="Tan Jia Xian"
-            className={`profile-pic ${
+            className={`rounded-img slide ${
               animateProfilePic ? "slide-up" : "slide-down"
             }`}
           />
         </div>
 
         <div className="slide-container" ref={p1Ref}>
-          <p className={animateP1 ? "slide-up" : "slide-down"}>
+          <p
+            className={`slide justify-text font-medium ${
+              animateP1 ? "slide-up" : "slide-down"
+            }`}
+          >
             I am a Jia Xian, a Year 2 Computer Science undergraduate at the
             National University of Singapore. Since young, I have always had an
             appetite and aptitude for problem-solving. I find that once I am
@@ -45,7 +49,11 @@ const Intro = React.forwardRef(
         </div>
 
         <div className="slide-container" ref={p2Ref}>
-          <p className={animateP2 ? "slide-up" : "slide-down"}>
+          <p
+            className={`slide justify-text font-medium ${
+              animateP2 ? "slide-up" : "slide-down"
+            }`}
+          >
             I delved into projects that involved solving problems that were near
             and dear to me. I found myself approaching these problems with the
             same tenacity as I had when I was first solving maths problems in

@@ -82,8 +82,8 @@ const Portfolio = React.forwardRef(({ animateArr }, ref) => {
   ]);
 
   return (
-    <div className="container">
-      <h2>Portfolio</h2>
+    <div className="margin-container">
+      <h1>Portfolio</h1>
       {exps.map((exp, index) => (
         <Experience
           key={exp.title.slice(0, 3)}
