@@ -23,7 +23,7 @@ const Intro = React.forwardRef(
 
     return (
       <div className="viewport-fit flex-center flex-column">
-        <div className="slide-container" ref={profilePicRef}>
+        <div className="slide-vert-container" ref={profilePicRef}>
           <img
             src={profilePic}
             alt="Tan Jia Xian"
@@ -33,7 +33,7 @@ const Intro = React.forwardRef(
           />
         </div>
 
-        <div className="slide-container" ref={p1Ref}>
+        <div className="slide-vert-container" ref={p1Ref}>
           <p
             className={`slide justify-text font-medium ${
               animateP1 ? "slide-up" : "slide-down"
@@ -48,7 +48,7 @@ const Intro = React.forwardRef(
           </p>
         </div>
 
-        <div className="slide-container" ref={p2Ref}>
+        <div className="slide-vert-container" ref={p2Ref}>
           <p
             className={`slide justify-text font-medium ${
               animateP2 ? "slide-up" : "slide-down"

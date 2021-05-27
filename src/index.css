@@ -127,8 +127,8 @@ span[data-hover-title]:hover:after {
   padding: 5px 10px;
   border-radius: 100px;
   color: white;
-  background-color: #777777;
-  font-size: small;
+  background-color: #999999;
+  font-size: 0.7rem;
 }
 
 /* SITEWIDE */
@@ -190,8 +190,12 @@ span[data-hover-title]:hover:after {
   https://stackoverflow.com/questions/43575336/cant-use-the-same-animation-in-reverse-for-class-toggle/43575547
 */
 
-.slide-container {
-  overflow: hidden;
+.slide-vert-container {
+  overflow-y: hidden;
+}
+
+.slide-horiz-container {
+  overflow-x: visible;
 }
 
 .slide {

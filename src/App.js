@@ -66,7 +66,7 @@ function App() {
   };
 
   const observerPartial = new IntersectionObserver(callback, {
-    threshold: 0.7,
+    threshold: 0.5,
   });
   const observerFull = new IntersectionObserver(callback, {
     threshold: 1,

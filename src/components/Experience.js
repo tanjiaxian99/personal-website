@@ -3,7 +3,7 @@ import React from "react";
 const Experience = React.forwardRef(({ exp, animate }, ref) => {
   return (
     <div
-      className={"viewport-fit flex-column flex-left slide-container"}
+      className={"viewport-fit flex-column flex-left slide-horiz-container"}
       ref={ref}
     >
       <div className={`slide ${animate ? "slide-right" : "slide-left"}`}>
@@ -16,16 +16,14 @@ const Experience = React.forwardRef(({ exp, animate }, ref) => {
           ))}
         </ul>
         <div className="logo-container">
-          {exp.logos.map((logo) => {
-            let logoName = logo.split(".")[0].split("/")[3];
-            logoName = logoName.charAt(0).toUpperCase() + logoName.slice(1);
+          {exp.logos.map(({ name, logo }) => {
             return (
-              <div key={logoName.slice(3)} className="hover-img-container">
-                <span data-hover-title={logoName}>
+              <div key={name.slice(3)} className="hover-img-container">
+                <span data-hover-title={name}>
                   <img
                     src={logo}
-                    alt={logoName}
-                    aria-label={logoName}
+                    alt={name}
+                    aria-label={name}
                     className="logo"
                   />
                 </span>
