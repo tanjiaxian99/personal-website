@@ -4,6 +4,7 @@ import Header from "./components/Header.js";
 import Hi from "./components/Hi.js";
 import Intro from "./components/Intro.js";
 import Portfolio from "./components/Portfolio.js";
+import Skill from "./components/Skill.js";
 
 function App() {
   // State to track whether a page should show
@@ -97,6 +98,7 @@ function App() {
         animateArr={[show.e1, show.e2, show.e3, show.e4]}
         ref={portfolioPageRef}
       />
+      <Skill />
     </>
   );
 }
