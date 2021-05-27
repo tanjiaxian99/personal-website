@@ -1,10 +1,10 @@
-import Ranking from "./Ranking.js";
+import Rating from "./Rating.js";
 
 const Skill = () => {
   return (
     <div className="grid-item">
       <h3>name</h3>
-      <Ranking />
+      <Rating />
     </div>
   );
 };

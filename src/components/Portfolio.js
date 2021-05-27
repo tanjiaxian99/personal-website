@@ -1,4 +1,4 @@
-import React, { useState, useRef, useImperativeHandle } from "react";
+import React, { useRef, useImperativeHandle } from "react";
 import Experience from "./Experience";
 import python from "../logos/python.svg";
 import numpy from "../logos/numpy.svg";
@@ -38,7 +38,7 @@ const Portfolio = React.forwardRef(({ animateArr }, ref) => {
     },
   }));
 
-  const [exps, setExp] = useState([
+  const exps = [
     {
       title: "Data Analyst",
       company: "Defence Science and Technology Agency (DSTA)",
@@ -106,7 +106,7 @@ const Portfolio = React.forwardRef(({ animateArr }, ref) => {
         { name: "Node.js", logo: node },
       ],
     },
-  ]);
+  ];
 
   return (
     <div className="margin-container">
