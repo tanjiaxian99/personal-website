@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import Header from "./components/Header.js";
 import Hi from "./components/Hi.js";
 import Intro from "./components/Intro.js";
-import Portfolio from "./components/Portfolio.js";
+import WorkExperience from "./components/WorkExperience.js";
 import Skill from "./components/Skill.js";
 
 function App() {
@@ -94,7 +94,7 @@ function App() {
         animateP2={show.introPageP2}
         ref={introPageRef}
       />
-      <Portfolio
+      <WorkExperience
         animateArr={[show.e1, show.e2, show.e3, show.e4]}
         ref={portfolioPageRef}
       />

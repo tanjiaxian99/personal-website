@@ -3,7 +3,7 @@ import React from "react";
 const Experience = React.forwardRef(({ exp, animate }, ref) => {
   return (
     <div
-      className={"viewport-fit flex-column flex-left slide-horiz-container"}
+      className={"flex-column flex-left slide-horiz-container"}
       ref={ref}
     >
       <div className={`slide ${animate ? "slide-right" : "slide-left"}`}>
@@ -11,8 +11,8 @@ const Experience = React.forwardRef(({ exp, animate }, ref) => {
         <h3>{exp.company}</h3>
         <h4>{exp.date}</h4>
         <ul className="font-medium">
-          {exp.pointers.map((pointer) => (
-            <li key={pointer.slice(0, 3)}>{pointer}</li>
+          {exp.bullets.map((bullet) => (
+            <li key={bullet.slice(0, 3)}>{bullet}</li>
           ))}
         </ul>
         <div className="logo-container">
