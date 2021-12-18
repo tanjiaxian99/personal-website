@@ -1,7 +1,7 @@
 import React from "react";
 import { InView } from "react-intersection-observer";
 
-const Experience = ({ exp }) => {
+const Experience = ({ experience }) => {
   return (
     <InView threshold={0.5}>
       {({ inView, ref }) => (
@@ -10,16 +10,16 @@ const Experience = ({ exp }) => {
           ref={ref}
         >
           <div className={`slide ${inView ? "slide-right" : "slide-left"}`}>
-            <h2>{exp.title}</h2>
-            <h3>{exp.company}</h3>
-            <h4>{exp.date}</h4>
+            <h2>{experience.title}</h2>
+            <h3>{experience.company}</h3>
+            <h4>{experience.date}</h4>
             <ul className="font-medium">
-              {exp.bullets.map((bullet) => (
-                <li key={bullet.slice(0, 3)}>{bullet}</li>
+              {experience.pointers.map((pointer, index) => (
+                <li key={index}>{pointer}</li>
               ))}
             </ul>
             <div className="logo-container">
-              {exp.logos.map(({ name, logo }) => {
+              {experience.logos.map(({ name, logo }) => {
                 return (
                   <div key={name.slice(3)} className="hover-img-container">
                     <span data-hover-title={name}>

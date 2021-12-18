@@ -1,8 +1,10 @@
+import { basicInfo } from "../data/data.js";
+
 const Header = () => {
   return (
     <header className="viewport-fit flex-column flex-center header">
-      <h1>Tan Jia Xian</h1>
-      <h2>Year 2 Computer Science, NUS</h2>
+      <h1>{basicInfo.name}</h1>
+      <h2>{basicInfo.description}</h2>
     </header>
   );
 };
