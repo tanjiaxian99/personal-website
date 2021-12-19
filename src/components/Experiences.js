@@ -2,10 +2,11 @@ import React from "react";
 import Experience from "./Experience";
 import { experiences } from "../data/data.js";
 
-const WorkExperience = () => {
+const Experiences = () => {
   return (
-    <div className="margin-container">
-      <h1>Work Experience</h1>
+    <div className="experiences-container">
+      <h1>Experience</h1>
+
       {experiences.map((experience, index) => (
         <Experience key={index} experience={experience} />
       ))}
@@ -13,4 +14,4 @@ const WorkExperience = () => {
   );
 };
 
-export default WorkExperience;
+export default Experiences;

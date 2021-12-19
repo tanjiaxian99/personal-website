@@ -4,16 +4,14 @@ import { InView } from "react-intersection-observer";
 
 const Intro = () => {
   return (
-    <div className="viewport-fit flex-center flex-column">
+    <div className="viewport-fit flex-center">
       <InView threshold={1}>
         {({ inView, ref }) => (
           <div className="slide-vert-container" ref={ref}>
             <img
               src={intro.profilePic}
               alt={basicInfo.name}
-              className={`rounded-img slide ${
-                inView ? "slide-up" : "slide-down"
-              }`}
+              className={`rounded-img ${inView ? "slide-up" : "slide-down"}`}
             />
           </div>
         )}
@@ -22,11 +20,7 @@ const Intro = () => {
       <InView threshold={1}>
         {({ inView, ref }) => (
           <div className="slide-vert-container" ref={ref}>
-            <p
-              className={`slide justify-text font-medium ${
-                inView ? "slide-up" : "slide-down"
-              }`}
-            >
+            <p className={`justify-text ${inView ? "slide-up" : "slide-down"}`}>
               {intro.writeUpOne}
             </p>
           </div>
@@ -36,11 +30,7 @@ const Intro = () => {
       <InView threshold={1}>
         {({ inView, ref }) => (
           <div className="slide-vert-container" ref={ref}>
-            <p
-              className={`slide justify-text font-medium ${
-                inView ? "slide-up" : "slide-down"
-              }`}
-            >
+            <p className={`justify-text ${inView ? "slide-up" : "slide-down"}`}>
               {intro.writeUpTwo}
             </p>
           </div>

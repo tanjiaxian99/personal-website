@@ -1,18 +1,19 @@
 import React from "react";
 import { InView } from "react-intersection-observer";
 
-const Hi = () => {
+const Welcome = () => {
   return (
     <InView threshold={1}>
       {({ inView, ref }) => (
-        <div className="sticky-box-container">
+        <div className="welcome-container">
           <div
-            className={`viewport-fit flex-column flex-center sticky-box fade ${
+            className={`welcome viewport-fit flex-center ${
               inView ? "fade-in" : "fade-out"
             }`}
             ref={ref}
           >
             <h1>Hi</h1>
+            {inView}
           </div>
         </div>
       )}
@@ -20,4 +21,4 @@ const Hi = () => {
   );
 };
 
-export default Hi;
+export default Welcome;

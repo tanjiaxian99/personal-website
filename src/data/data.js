@@ -97,8 +97,7 @@ export const experiences = [
       `Reduced time to view gym traffic by 2.3 times by using Telegraf.js to build a Telegram bot that allows bookings 
       cancellations, and displays a traffic chart for various facilities.`,
       `Challenges include working with a partner and maintaining proper git branching workflow, learning MERN stack 
-      within a span of 2 weeks, building an API that fetches gym/pool traffic data from NUS website, and maintaining 
-      sessions and cookies to keep users logged in.`,
+      within a span of 2 weeks, building an API that fetches gym/pool traffic data from NUS website, and maintaining sessions and cookies to keep users logged in.`,
     ],
     logos: [
       { name: "Javascript", logo: javascript },

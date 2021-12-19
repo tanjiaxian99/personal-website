@@ -1,20 +1,20 @@
 import "./App.css";
 import { useEffect, useRef, useState } from "react";
 import Header from "./components/Header.js";
-import Hi from "./components/Hi.js";
+import Welcome from "./components/Welcome.js";
 import Intro from "./components/Intro.js";
-import WorkExperience from "./components/WorkExperience.js";
+import Experiences from "./components/Experiences.js";
 import Skill from "./components/Skill.js";
 
 function App() {
   return (
-    <>
+    <div className="padding">
       <Header />
-      <Hi />
+      <Welcome />
       <Intro />
-      <WorkExperience />
+      <Experiences />
       <Skill />
-    </>
+    </div>
   );
 }
 
