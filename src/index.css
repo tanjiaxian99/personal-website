@@ -57,6 +57,14 @@ p {
   text-align: justify;
 }
 
+ul {
+  padding-left: 0;
+}
+
+li {
+  margin-left: 1em;
+}
+
 /* ### UTILITIES ### */
 
 /* css 100vw issues and fix
