@@ -17,6 +17,9 @@ import {
   materialUi,
   heroku,
   java,
+  github,
+  linkedin,
+  email,
 } from "./logos";
 import profilePic from "../images/profile-pic.jpg";
 import mahjongCalculator from "../images/mahjong-calculator.png";
@@ -163,3 +166,8 @@ export const projects = [
     screenshot: mahjong,
   },
 ];
+
+export const footer = {
+  title: "Thanks for visiting!",
+  logos: [github, linkedin, email],
+};

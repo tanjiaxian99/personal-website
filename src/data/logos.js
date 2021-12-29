@@ -16,6 +16,10 @@ import telegramLogo from "../logos/telegram.svg";
 import materialUiLogo from "../logos/material-ui.svg";
 import herokuLogo from "../logos/heroku.svg";
 import javaLogo from "../logos/java.svg";
+import gitLogo from "../logos/git.svg";
+import githubLogo from "../logos/github.svg";
+import linkedinLogo from "../logos/linkedin.svg";
+import emailLogo from "../logos/email.svg";
 
 export const python = { name: "Python", logo: pythonLogo };
 export const pandas = { name: "Pandas", logo: pandasLogo };
@@ -35,3 +39,18 @@ export const telegram = { name: "Telegram Bot API", logo: telegramLogo };
 export const materialUi = { name: "Material-UI", logo: materialUiLogo };
 export const heroku = { name: "Heroku", logo: herokuLogo };
 export const java = { name: "Java", logo: javaLogo };
+export const github = {
+  name: "GitHub",
+  link: "https://github.com/tanjiaxian99",
+  logo: githubLogo,
+};
+export const linkedin = {
+  name: "LinkedIn",
+  link: "https://www.linkedin.com/in/jia-xian-tan-5490721a0/",
+  logo: linkedinLogo,
+};
+export const email = {
+  name: "Email",
+  link: "mailto: tanjiaxian99@u.nus.edu",
+  logo: emailLogo,
+};

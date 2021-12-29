@@ -14,6 +14,7 @@ const Project = ({ project }) => {
                 <div className="project-url">
                   <h3>
                     <a
+                      className="link"
                       href={project.projectUrl}
                       target="_blank"
                       rel="noreferrer"
@@ -33,7 +34,13 @@ const Project = ({ project }) => {
               <div className="project-urls">
                 {project.urls.map(({ url, description }, index) => (
                   <div className="project-url">
-                    <a href={url} target="_blank" rel="noreferrer" key={index}>
+                    <a
+                      className="link"
+                      href={url}
+                      target="_blank"
+                      rel="noreferrer"
+                      key={index}
+                    >
                       {description}
                     </a>
                   </div>
