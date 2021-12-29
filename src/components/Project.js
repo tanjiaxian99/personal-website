@@ -6,11 +6,7 @@ const Project = ({ project }) => {
     <InView>
       {({ inView, ref }) => (
         <div className="project-container slide-horiz-container" ref={ref}>
-          <div
-            className={` ${
-              inView ? "slide-left-right" : "slide-left-right-reverse"
-            }`}
-          >
+          <div className={`slide-left-right ${inView ? "" : "reverse"}`}>
             <div className="project-details">
               <p className="date">{project.date}</p>
               {project.projectUrl ? (
@@ -53,12 +49,7 @@ const Project = ({ project }) => {
             </div>
           </div>
 
-          {/* <img className="project-img" src={project.screenshot} /> */}
-          <div
-            className={` ${
-              inView ? "slide-right-left" : "slide-right-left-reverse"
-            }`}
-          >
+          <div className={`slide-right-left ${inView ? "" : "reverse"}`}>
             <img className="project-img" src={project.screenshot} />
           </div>
         </div>

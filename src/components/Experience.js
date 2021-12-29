@@ -3,10 +3,10 @@ import { InView } from "react-intersection-observer";
 
 const Experience = ({ experience }) => {
   return (
-    <InView threshold={0.5}>
+    <InView>
       {({ inView, ref }) => (
         <div className="experience-container slide-horiz-container" ref={ref}>
-          <div className={`${inView ? "slide-right" : "slide-left"}`}>
+          <div className={`slide-left-right ${inView ? "" : "reverse"}`}>
             <p className="date">{experience.date}</p>
             <h3>
               {experience.title} @ {experience.company}

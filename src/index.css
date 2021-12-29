@@ -79,7 +79,7 @@ a:hover {
 */
 .container {
   box-sizing: border-box;
-  margin: 0 12vw;
+  padding: 0 12vw;
 }
 
 .viewport-fit {
@@ -227,7 +227,7 @@ a:hover {
   position: relative;
 }
 
-.slide-left-right-reverse {
+.slide-left-right.reverse {
   transition: all 1.2s cubic-bezier(0, 1, 0.5, 1);
   right: 100%;
   position: relative;
@@ -239,7 +239,7 @@ a:hover {
   position: relative;
 }
 
-.slide-right-left-reverse {
+.slide-right-left.reverse {
   transition: all 1.2s cubic-bezier(0, 1, 0.5, 1);
   left: 100%;
   position: relative;
