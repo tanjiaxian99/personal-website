@@ -1,22 +1,24 @@
+import {
+  python,
+  pandas,
+  scikitLearn,
+  matplotlib,
+  cSharp,
+  unity,
+  photon,
+  html,
+  css,
+  javascript,
+  react,
+  mongoDb,
+  express,
+  node,
+  telegram,
+  materialUi,
+  heroku,
+  java,
+} from "./logos";
 import profilePic from "../images/profile-pic.jpg";
-import python from "../logos/python.svg";
-import pandas from "../logos/pandas.svg";
-import scikit from "../logos/scikit-learn.svg";
-import matplotlib from "../logos/matplotlib.svg";
-import cSharp from "../logos/c-sharp.svg";
-import unity from "../logos/unity.svg";
-import photon from "../logos/photon.png";
-import html from "../logos/html-5.svg";
-import css from "../logos/css-3.svg";
-import javascript from "../logos/javascript.svg";
-import reactLogo from "../logos/react.svg";
-import mongoDB from "../logos/mongodb.svg";
-import express from "../logos/express.svg";
-import node from "../logos/nodejs.svg";
-import telegram from "../logos/telegram.svg";
-import materialUi from "../logos/material-ui.svg";
-import heroku from "../logos/heroku.svg";
-import java from "../logos/java.svg";
 import mahjongCalculator from "../images/mahjong-calculator.png";
 import nusfitness from "../images/nusfitness.png";
 import mahjong from "../images/mahjong.png";
@@ -40,6 +42,28 @@ export const intro = {
   ],
 };
 
+export const skills = [
+  {
+    title: "I am not that bad with:",
+    logos: [
+      javascript,
+      python,
+      java,
+      mongoDb,
+      express,
+      react,
+      node,
+      html,
+      css,
+      heroku,
+    ],
+  },
+  {
+    title: "I have played around with:",
+    logos: [cSharp, materialUi, pandas, matplotlib, scikitLearn, unity],
+  },
+];
+
 export const experiences = [
   {
     title: "Data Structures and Algorithms Teaching Assistant",
@@ -49,7 +73,7 @@ export const experiences = [
       `Teach 23 students with another Teaching Assistant to guide students in their lab assignments, answer questions on
       data structures and algorithms, and give constructive feedback for their work.`,
     ],
-    logos: [{ name: "Java", logo: java }],
+    logos: [java],
   },
   {
     title: "Data Analyst Intern",
@@ -62,12 +86,7 @@ export const experiences = [
       relevant ship engine sensors that correlate with the specified faults, and usingMatplotlib to stitch together 
       various time-series graphs.`,
     ],
-    logos: [
-      { name: "Python", logo: python },
-      { name: "Pandas", logo: pandas },
-      { name: "Matplotlib", logo: matplotlib },
-      { name: "scikit-learn", logo: scikit },
-    ],
+    logos: [python, pandas, matplotlib, scikitLearn],
   },
 ];
 
@@ -103,12 +122,7 @@ export const projects = [
         description: "View the code on Github.",
       },
     ],
-    logos: [
-      { name: "Node.js", logo: node },
-      { name: "MongoDB", logo: mongoDB },
-      { name: "Telegram Bot API", logo: telegram },
-      { name: "Heroku", logo: heroku },
-    ],
+    logos: [node, mongoDb, telegram, heroku],
     screenshot: mahjongCalculator,
   },
   {
@@ -130,15 +144,7 @@ export const projects = [
         description: "Watch the demo video here.",
       },
     ],
-    logos: [
-      { name: "MongoDB", logo: mongoDB },
-      { name: "Express", logo: express },
-      { name: "React", logo: reactLogo },
-      { name: "Node.js", logo: node },
-      { name: "Telegram Bot API", logo: telegram },
-      { name: "Material-UI", logo: materialUi },
-      { name: "Heroku", logo: heroku },
-    ],
+    logos: [mongoDb, express, react, node, telegram, materialUi, heroku],
     screenshot: nusfitness,
   },
   {
@@ -153,11 +159,7 @@ export const projects = [
         description: "View the code on Github.",
       },
     ],
-    logos: [
-      { name: "C#", logo: cSharp },
-      { name: "Unity3D", logo: unity },
-      { name: "Photon", logo: photon },
-    ],
+    logos: [cSharp, unity, photon],
     screenshot: mahjong,
   },
 ];

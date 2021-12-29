@@ -4,8 +4,8 @@ import { InView } from "react-intersection-observer";
 
 const Intro = () => {
   return (
-    <div className="container viewport-fit flex-center">
-      <InView threshold={1}>
+    <div className="container intro-container flex-center">
+      <InView>
         {({ inView, ref }) => (
           <div className="slide-vert-container" ref={ref}>
             <img

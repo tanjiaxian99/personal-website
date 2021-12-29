@@ -1,6 +1,7 @@
 import React from "react";
 
 const Logos = ({ logos }) => {
+  console.log(logos);
   return (
     <div className="logos-container">
       {logos.map(({ name, logo }, index) => (

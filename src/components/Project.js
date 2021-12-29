@@ -13,7 +13,11 @@ const Project = ({ project }) => {
               {project.projectUrl ? (
                 <div className="project-url">
                   <h3>
-                    <a href={project.projectUrl} target="_blank">
+                    <a
+                      href={project.projectUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       {project.title}
                     </a>
                   </h3>
@@ -29,7 +33,7 @@ const Project = ({ project }) => {
               <div className="project-urls">
                 {project.urls.map(({ url, description }, index) => (
                   <div className="project-url">
-                    <a href={url} target="_blank" key={index}>
+                    <a href={url} target="_blank" rel="noreferrer" key={index}>
                       {description}
                     </a>
                   </div>
@@ -39,7 +43,11 @@ const Project = ({ project }) => {
           </div>
 
           <div className={`slide-right-left ${inView ? "" : "reverse"}`}>
-            <img className="project-img" src={project.screenshot} />
+            <img
+              className="project-img"
+              src={project.screenshot}
+              alt={`${project.title} screenshot`}
+            />
           </div>
         </div>
       )}
