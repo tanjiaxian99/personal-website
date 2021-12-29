@@ -1,5 +1,6 @@
 import React from "react";
 import InView from "react-intersection-observer";
+import Logos from "./Logos";
 
 const Project = ({ project }) => {
   return (
@@ -23,19 +24,7 @@ const Project = ({ project }) => {
 
               <p>{project.writeup}</p>
 
-              <div className="logos-container">
-                {project.logos.map(({ name, logo }, index) => (
-                  <div className="logo-container" key={index}>
-                    <img
-                      className="logo"
-                      src={logo}
-                      alt={name}
-                      aria-label={name}
-                    />
-                    <span className="logo-name">{name}</span>
-                  </div>
-                ))}
-              </div>
+              <Logos logos={project.logos} />
 
               <div className="project-urls">
                 {project.urls.map(({ url, description }, index) => (

@@ -1,5 +1,6 @@
 import React from "react";
 import { InView } from "react-intersection-observer";
+import Logos from "./Logos";
 
 const Experience = ({ experience }) => {
   return (
@@ -18,19 +19,7 @@ const Experience = ({ experience }) => {
               ))}
             </ul>
 
-            <div className="logos-container">
-              {experience.logos.map(({ name, logo }, index) => (
-                <div className="logo-container" key={index}>
-                  <img
-                    className="logo"
-                    src={logo}
-                    alt={name}
-                    aria-label={name}
-                  />
-                  <span className="logo-name">{name}</span>
-                </div>
-              ))}
-            </div>
+            <Logos logos={experience.logos} />
           </div>
         </div>
       )}
