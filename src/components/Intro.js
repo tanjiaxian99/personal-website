@@ -4,7 +4,7 @@ import { InView } from "react-intersection-observer";
 
 const Intro = () => {
   return (
-    <div className="viewport-fit flex-center">
+    <div className="container viewport-fit flex-center">
       <InView threshold={1}>
         {({ inView, ref }) => (
           <div className="slide-vert-container" ref={ref}>
@@ -17,25 +17,19 @@ const Intro = () => {
         )}
       </InView>
 
-      <InView threshold={1}>
-        {({ inView, ref }) => (
-          <div className="slide-vert-container" ref={ref}>
-            <p className={`justify-text ${inView ? "slide-up" : "slide-down"}`}>
-              {intro.writeUpOne}
-            </p>
-          </div>
-        )}
-      </InView>
-
-      <InView threshold={1}>
-        {({ inView, ref }) => (
-          <div className="slide-vert-container" ref={ref}>
-            <p className={`justify-text ${inView ? "slide-up" : "slide-down"}`}>
-              {intro.writeUpTwo}
-            </p>
-          </div>
-        )}
-      </InView>
+      {intro.writeup.map((writeup, index) => (
+        <InView threshold={1} key={index}>
+          {({ inView, ref }) => (
+            <div className="slide-vert-container" ref={ref}>
+              <p
+                className={`justify-text ${inView ? "slide-up" : "slide-down"}`}
+              >
+                {writeup}
+              </p>
+            </div>
+          )}
+        </InView>
+      ))}
     </div>
   );
 };

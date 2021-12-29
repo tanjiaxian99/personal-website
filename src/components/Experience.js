@@ -18,17 +18,16 @@ const Experience = ({ experience }) => {
               ))}
             </ul>
 
-            <div>
+            <div className="logos-container">
               {experience.logos.map(({ name, logo }, index) => (
-                <div className="hover-img-container" key={index}>
-                  <span data-hover-title={name}>
-                    <img
-                      className="logo"
-                      src={logo}
-                      alt={name}
-                      aria-label={name}
-                    />
-                  </span>
+                <div className="logo-container" key={index}>
+                  <img
+                    className="logo"
+                    src={logo}
+                    alt={name}
+                    aria-label={name}
+                  />
+                  <span className="logo-name">{name}</span>
                 </div>
               ))}
             </div>

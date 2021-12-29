@@ -13,7 +13,6 @@ const Welcome = () => {
             ref={ref}
           >
             <h1>Hi</h1>
-            {inView}
           </div>
         </div>
       )}
