@@ -3,7 +3,7 @@ import Logos from "./Logos.js";
 
 const Footer = () => {
   return (
-    <div className="container">
+    <footer>
       <p>{footer.title}</p>
 
       <div className="logos-container">
@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
         ))}
       </div>
-    </div>
+    </footer>
   );
 };
 

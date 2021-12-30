@@ -18,12 +18,10 @@
 /* ### GENERAL STYLES ### */
 
 html {
-  /* background-color: rgb(233, 241, 255); */
   color: #1d1d1f;
   font-size: 17px;
   line-height: 1.47059;
-  /* width: 100%; */
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 body {
@@ -34,7 +32,6 @@ body {
   font-family: SFPro;
   font-size: 1.4rem;
   letter-spacing: -0.022rem;
-  /* width: 100%; */
 }
 
 h1 {
@@ -73,8 +70,7 @@ li {
 */
 .container {
   box-sizing: border-box;
-  padding: 0 12vw;
-  margin: 6rem 0;
+  margin: 0 12vw;
 }
 
 .viewport-fit {
@@ -216,10 +212,6 @@ li {
 
 .slide-vert-container {
   overflow-y: hidden;
-}
-
-.slide-horiz-container {
-  overflow-x: hidden;
 }
 
 .slide-up {

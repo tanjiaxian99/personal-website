@@ -4,7 +4,7 @@ import { InView } from "react-intersection-observer";
 
 const Intro = () => {
   return (
-    <div className="container intro-container flex-center">
+    <div className="intro-container flex-center">
       <InView>
         {({ inView, ref }) => (
           <div className="slide-vert-container" ref={ref}>

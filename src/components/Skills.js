@@ -3,7 +3,7 @@ import Logos from "./Logos.js";
 
 const Skills = () => {
   return (
-    <div className="container">
+    <div>
       <h2>Skills</h2>
       {skills.map((skillType) => (
         <>
