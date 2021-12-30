@@ -4,13 +4,13 @@ import { experiences } from "../data/data.js";
 
 const Experiences = () => {
   return (
-    <div>
+    <section>
       <h2>Experiences</h2>
 
       {experiences.map((experience, index) => (
         <Experience key={index} experience={experience} />
       ))}
-    </div>
+    </section>
   );
 };
 

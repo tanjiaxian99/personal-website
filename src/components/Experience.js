@@ -6,7 +6,7 @@ const Experience = ({ experience }) => {
   return (
     <InView>
       {({ inView, ref }) => (
-        <div className="experience-container slide-horiz-container" ref={ref}>
+        <div className="experience-container" ref={ref}>
           <div className={`slide-left-right ${inView ? "" : "reverse"}`}>
             <p className="date">{experience.date}</p>
             <h3>

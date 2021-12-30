@@ -6,7 +6,7 @@ const Project = ({ project }) => {
   return (
     <InView>
       {({ inView, ref }) => (
-        <div className="project-container slide-horiz-container" ref={ref}>
+        <div className="project-container" ref={ref}>
           <div className={`slide-left-right ${inView ? "" : "reverse"}`}>
             <div className="project-details">
               <p className="date">{project.date}</p>

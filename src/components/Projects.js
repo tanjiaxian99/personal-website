@@ -4,13 +4,13 @@ import { projects } from "../data/data";
 
 const Projects = () => {
   return (
-    <div>
+    <section>
       <h2>Projects</h2>
 
       {projects.map((project, index) => (
         <Project key={index} project={project} />
       ))}
-    </div>
+    </section>
   );
 };
 
