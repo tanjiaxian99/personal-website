@@ -9,7 +9,7 @@ const Intro = () => {
       {({ inView, ref }) => (
         <section className="intro" ref={ref}>
           <IntroWriteup inView={inView} />
-          <Skills />
+          <Skills inView={inView} />
         </section>
       )}
     </InView>

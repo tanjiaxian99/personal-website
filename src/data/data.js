@@ -46,16 +46,17 @@ export const intro = {
   There are still many problems out there in the world, and it is my hope that one day, I am sufficiently capable to 
   solve one of them.`,
   ],
+  logos: [github, linkedin, email],
 };
 
 export const skills = [
   {
-    title: "I am not that bad with:",
-    logos: [javascript, python, java, mongoDb, express, react, node, git],
+    title: "languages",
+    logos: [javascript, python, java],
   },
   {
-    title: "I have played around with:",
-    logos: [c, cSharp, ruby, antDesign, rails],
+    title: "frameworks & tools",
+    logos: [mongoDb, express, react, node, materialUi, git],
   },
 ];
 

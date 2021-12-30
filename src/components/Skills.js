@@ -1,9 +1,9 @@
 import { skills } from "../data/data.js";
 import Logos from "./Logos.js";
 
-const Skills = () => {
+const Skills = ({ inView }) => {
   return (
-    <div className="skills">
+    <div className={`skills slide-right-left ${inView ? "" : "reverse"}`}>
       <h2>skills.</h2>
       {skills.map((skillType) => (
         <>

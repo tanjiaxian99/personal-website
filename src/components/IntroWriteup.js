@@ -1,19 +1,25 @@
 import { intro } from "../data/data.js";
-import { InView } from "react-intersection-observer";
-import { forwardRef } from "react";
+import ClickableLogo from "./ClickableLogo.js";
 
 const IntroWriteup = ({ inView }) => {
+  const { writeup, logos } = intro;
   return (
     <div
       className={`intro-writeup slide-left-right ${inView ? "" : "reverse"}`}
     >
       <h2>about myself.</h2>
 
-      {intro.writeup.map((writeup, index) => (
+      {writeup.map((writeup, index) => (
         <p className="justify-text" key={index}>
           {writeup}
         </p>
       ))}
+
+      <div className="logos-container">
+        {logos.map((logo) => (
+          <ClickableLogo logo={logo} />
+        ))}
+      </div>
     </div>
   );
 };
