@@ -108,16 +108,6 @@ footer {
   border-radius: 50%;
 }
 
-.welcome {
-  background-color: rgb(233, 241, 255);
-  position: sticky;
-  top: 0px;
-}
-
-.welcome-container {
-  height: 1700px;
-}
-
 .intro-container {
   height: 60vh;
 }
