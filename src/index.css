@@ -90,6 +90,10 @@ footer {
   border-radius: 50%;
 }
 
+.clickable-logo {
+  margin: 0 2rem 0 0;
+}
+
 .link {
   color: black;
   text-decoration: None;
@@ -127,6 +131,13 @@ footer {
 
 .experience-container {
   margin: 0 0 6rem 0;
+}
+
+.experience-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 
 .logos-container {

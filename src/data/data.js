@@ -2,15 +2,20 @@ import {
   antDesign,
   c,
   cSharp,
+  dsta,
+  email,
   express,
   git,
+  github,
   heroku,
   java,
   javascript,
+  linkedin,
   matplotlib,
   materialUi,
   mongoDb,
   node,
+  nus,
   pandas,
   photon,
   python,
@@ -20,9 +25,6 @@ import {
   scikitLearn,
   telegram,
   unity,
-  github,
-  linkedin,
-  email,
 } from "./logos";
 import profilePic from "../images/profile-pic.jpg";
 import mahjongCalculator from "../images/mahjong-calculator.png";
@@ -62,7 +64,7 @@ export const skills = [
 export const experiences = [
   {
     title: "Data Structures and Algorithms Teaching Assistant",
-    company: "NUS",
+    companyLogo: nus,
     date: "Aug 2021 - Dec 2021",
     pointers: [
       `Teach 23 students with another Teaching Assistant to guide students in their lab assignments, answer questions on
@@ -72,7 +74,7 @@ export const experiences = [
   },
   {
     title: "Data Analyst Intern",
-    company: "DSTA",
+    companyLogo: dsta,
     date: "Jan 2020 - Mar 2020",
     pointers: [
       `Increased Navy ship engine fault detection rate by 45% through analyzing existing Navy Ship engine data using 
