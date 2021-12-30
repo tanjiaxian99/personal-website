@@ -3,15 +3,15 @@ import Logos from "./Logos.js";
 
 const Skills = () => {
   return (
-    <section>
-      <h2>Skills</h2>
+    <div className="skills">
+      <h2>skills.</h2>
       {skills.map((skillType) => (
         <>
           <h4>{skillType.title}</h4>
           <Logos logos={skillType.logos} />
         </>
       ))}
-    </section>
+    </div>
   );
 };
 

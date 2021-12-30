@@ -2,7 +2,7 @@ import { header } from "../data/data.js";
 
 const Header = () => {
   return (
-    <header className="header viewport-fit flex-center">
+    <header className="viewport-fit">
       <div className="header-welcome">
         <p>hello everybody, I am</p>
         <h1>Tan Jia Xian</h1>

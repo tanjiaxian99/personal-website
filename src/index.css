@@ -34,7 +34,7 @@ h3 {
 }
 
 p {
-  margin: 1vh 0;
+  margin: 4vh 0;
   text-align: justify;
 }
 
@@ -44,6 +44,17 @@ ul {
 
 li {
   margin-left: 1em;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(115, 158, 223);
+  color: white;
+  gap: 10rem;
+  font-size: 2rem;
 }
 
 section,
@@ -89,15 +100,6 @@ footer {
 }
 
 /* ### SITEWIDE ### */
-.header {
-  display: flex;
-  flex-direction: row;
-  background-color: rgb(115, 158, 223);
-  color: white;
-  gap: 10rem;
-  font-size: 2rem;
-}
-
 .header-welcome {
   margin: 12rem 0 0 0;
 }
@@ -108,8 +110,19 @@ footer {
   border-radius: 50%;
 }
 
-.intro-container {
-  height: 60vh;
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.intro-writeup {
+  max-width: 60%;
+}
+
+.skills {
+  max-width: 30%;
 }
 
 .experience-container {
