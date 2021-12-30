@@ -31,13 +31,11 @@ import mahjongCalculator from "../images/mahjong-calculator.png";
 import nusfitness from "../images/nusfitness.png";
 import mahjong from "../images/mahjong.png";
 
-export const basicInfo = {
-  name: "Tan Jia Xian",
-  description: "Year 2 Computer Science, NUS",
+export const header = {
+  profilePic,
 };
 
 export const intro = {
-  profilePic,
   writeup: [
     `I am a Jia Xian, a Year 2 Computer Science undergraduate at the National University of Singapore. 
   Since young, I have always had an appetite and aptitude for problem-solving. I find that once I am hooked on to a 

@@ -10,7 +10,7 @@ const Intro = () => {
           <div className="slide-vert-container" ref={ref}>
             <img
               src={intro.profilePic}
-              alt={basicInfo.name}
+              alt="Tan Jia Xian"
               className={`rounded-img ${inView ? "slide-up" : "slide-down"}`}
             />
           </div>
