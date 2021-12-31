@@ -57,6 +57,30 @@ header {
   font-size: 2rem;
 }
 
+nav {
+  background-color: rgb(115, 158, 223);
+  color: white;
+  position: sticky;
+  top: 0;
+  padding: 0 12vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  z-index: 2;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+
+nav li {
+  margin-left: 2.5rem;
+}
+
 section,
 footer {
   margin: 6rem 12vw;
@@ -108,6 +132,11 @@ footer {
   height: 30vw;
   width: 30vw;
   border-radius: 50%;
+}
+
+.navbar-name {
+  display: flex;
+  align-items: center;
 }
 
 .intro {
