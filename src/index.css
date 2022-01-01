@@ -3,7 +3,7 @@
 
 /* ### GENERAL STYLES ### */
 html {
-  color: #1d1d1f;
+  color: rgb(100, 99, 99);
   font-size: 17px;
   font-family: "Poppins";
   line-height: 1.47059;
@@ -17,28 +17,31 @@ body {
   letter-spacing: -0.022rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: #1d1d1f;
+}
+
 h1 {
   font-size: 5rem;
-  margin: 0px;
 }
 
 h2 {
   font-size: 3rem;
-  margin: 0px;
 }
 
 h3 {
   font-size: 1.5rem;
-  margin: 0;
 }
 
 p {
-  margin: 4vh 0;
+  margin: 2rem 0;
   text-align: justify;
-}
-
-header p {
-  margin: 0;
 }
 
 ul {
@@ -47,41 +50,6 @@ ul {
 
 li {
   margin-left: 1em;
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(115, 158, 223);
-  color: white;
-  gap: 10rem;
-  font-size: 2rem;
-}
-
-nav {
-  background-color: rgb(115, 158, 223);
-  color: white;
-  position: sticky;
-  top: 0;
-  padding: 0 12vw;
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.5rem;
-  z-index: 2;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 1rem 0;
-}
-
-nav li {
-  margin-left: 2.5rem;
 }
 
 section,
@@ -132,14 +100,57 @@ footer {
 }
 
 /* ### SITEWIDE ### */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(115, 158, 223);
+  color: white;
+  gap: 10rem;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0;
+}
+
 .header-welcome {
   margin: 12rem 0 0 0;
+}
+
+.header-name {
+  color: white;
 }
 
 .profile-pic {
   height: 30vw;
   width: 30vw;
   border-radius: 50%;
+}
+
+nav {
+  background-color: rgb(115, 158, 223);
+  color: white;
+  position: sticky;
+  top: 0;
+  padding: 0 12vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  z-index: 2;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+
+nav li {
+  margin-left: 2.5rem;
 }
 
 .navbar-name {
@@ -164,6 +175,11 @@ footer {
 
 .skills {
   max-width: 30%;
+}
+
+.skill-title {
+  color: gray;
+  margin: 2rem 0 0 0;
 }
 
 .experiences {

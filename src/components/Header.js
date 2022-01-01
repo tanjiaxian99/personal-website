@@ -11,7 +11,7 @@ const Header = ({ setHeaderInView }) => {
         <header id="home" className="viewport-fit" ref={ref}>
           <div className="header-welcome">
             <p>hello everybody, I am</p>
-            <h1>Tan Jia Xian</h1>
+            <h1 className="header-name">Tan Jia Xian</h1>
             <p>Computer Science, Year 2</p>
             <p>National University of Singapore (NUS)</p>
           </div>

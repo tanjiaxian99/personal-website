@@ -7,7 +7,7 @@ const Skills = ({ inView }) => {
       <h2>skills.</h2>
       {skills.map((skillType) => (
         <>
-          <h4>{skillType.title}</h4>
+          <h3 className="skill-title">{skillType.title}</h3>
           <Logos logos={skillType.logos} />
         </>
       ))}

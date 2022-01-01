@@ -1,6 +1,4 @@
-import { InView } from "react-intersection-observer";
 import { Link } from "react-scroll";
-import { useRef, useEffect } from "react";
 
 const Navbar = ({ headerInView }) => {
   return (
