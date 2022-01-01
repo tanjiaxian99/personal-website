@@ -119,6 +119,7 @@ footer {
   border-bottom: 2px solid black;
   padding-bottom: 2px;
   transition: border-bottom 0.5s, padding-bottom 0.5s;
+  cursor: pointer;
 }
 
 .link:hover {
@@ -141,6 +142,10 @@ footer {
 .navbar-name {
   display: flex;
   align-items: center;
+}
+
+.navbar-link {
+  cursor: pointer;
 }
 
 .about {

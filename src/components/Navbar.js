@@ -13,6 +13,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={1000}
+              className="navbar-link"
             >
               home.
             </Link>
@@ -24,6 +25,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={1000}
+              className="navbar-link"
             >
               about.
             </Link>
@@ -35,6 +37,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={1000}
+              className="navbar-link"
             >
               experiences.
             </Link>
@@ -46,6 +49,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={1000}
+              className="navbar-link"
             >
               projects.
             </Link>
