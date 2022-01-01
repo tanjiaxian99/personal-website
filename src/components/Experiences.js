@@ -1,6 +1,11 @@
 import React from "react";
 import Experience from "./Experience";
 import { experiences } from "../data/data.js";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
 const Experiences = () => {
   return (
@@ -9,11 +14,11 @@ const Experiences = () => {
       <section>
         <h2>Experiences</h2>
 
-        <div className="experiences">
+        <VerticalTimeline layout="1-column left" lineColor="rgb(200, 200, 200)">
           {experiences.map((experience, index) => (
             <Experience key={index} experience={experience} />
           ))}
-        </div>
+        </VerticalTimeline>
       </section>
     </>
   );

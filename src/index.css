@@ -3,7 +3,7 @@
 
 /* ### GENERAL STYLES ### */
 html {
-  color: rgb(100, 99, 99);
+  color: rgb(99, 99, 99);
   font-size: 17px;
   font-family: "Poppins";
   line-height: 1.47059;
@@ -40,7 +40,7 @@ h3 {
 }
 
 p {
-  margin: 2rem 0;
+  margin: 0;
   text-align: justify;
 }
 
@@ -170,6 +170,9 @@ nav li {
 }
 
 .about-writeup {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   max-width: 60%;
 }
 
@@ -179,13 +182,20 @@ nav li {
 
 .skill-title {
   color: gray;
-  margin: 2rem 0 0 0;
+  margin: 2rem 0 1rem 0;
 }
 
-.experiences {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+.vertical-timeline {
+  margin: 0 !important;
+}
+
+.vertical-timeline-element-content {
+  padding: 0 1rem !important;
+}
+
+.vertical-timeline-element-container {
+  /* position: relative;
+  top: 16px; */
 }
 
 .experience-title {
@@ -199,7 +209,6 @@ nav li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 1rem 0 2rem 0;
 }
 
 .logo-container {
@@ -233,6 +242,9 @@ nav li {
 
 .date {
   color: grey;
+  margin: 0;
+  font-weight: 100;
+  font-size: 1.2rem;
 }
 
 .projects {
@@ -250,8 +262,8 @@ nav li {
 .project-details {
   display: flex;
   flex-direction: column;
-  align-items: left;
   padding: 0 4rem 0 0;
+  gap: 2rem;
 }
 
 .project-urls {
