@@ -193,11 +193,6 @@ nav li {
   padding: 0 1rem !important;
 }
 
-.vertical-timeline-element-container {
-  /* position: relative;
-  top: 16px; */
-}
-
 .experience-title {
   display: flex;
   flex-direction: row;
