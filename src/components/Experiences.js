@@ -4,13 +4,18 @@ import { experiences } from "../data/data.js";
 
 const Experiences = () => {
   return (
-    <section>
-      <h2>Experiences</h2>
+    <>
+      <div className="section-anchor" id="experiences"></div>
+      <section>
+        <h2>Experiences</h2>
 
-      {experiences.map((experience, index) => (
-        <Experience key={index} experience={experience} />
-      ))}
-    </section>
+        <div className="experiences">
+          {experiences.map((experience, index) => (
+            <Experience key={index} experience={experience} />
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 

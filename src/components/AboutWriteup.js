@@ -1,11 +1,11 @@
-import { intro } from "../data/data.js";
+import { about } from "../data/data.js";
 import ClickableLogo from "./ClickableLogo.js";
 
 const IntroWriteup = ({ inView }) => {
-  const { writeup, logos } = intro;
+  const { writeup, logos } = about;
   return (
     <div
-      className={`intro-writeup slide-left-right ${inView ? "" : "reverse"}`}
+      className={`about-writeup slide-left-right ${inView ? "" : "reverse"}`}
     >
       <h2>about myself.</h2>
 

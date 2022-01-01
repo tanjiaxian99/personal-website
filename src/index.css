@@ -83,7 +83,7 @@ nav li {
 
 section,
 footer {
-  margin: 6rem 12vw;
+  margin: 4.5rem 12vw 0 12vw;
 }
 
 /* ### UTILITIES ### */
@@ -103,6 +103,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.section-anchor {
+  height: 2rem;
 }
 
 .clickable-logo {
@@ -139,14 +143,14 @@ footer {
   align-items: center;
 }
 
-.intro {
+.about {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.intro-writeup {
+.about-writeup {
   max-width: 60%;
 }
 
@@ -154,8 +158,10 @@ footer {
   max-width: 30%;
 }
 
-.experience-container {
-  margin: 0 0 6rem 0;
+.experiences {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .experience-title {
@@ -205,11 +211,16 @@ footer {
   color: grey;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 .project-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0 0 6rem 0;
 }
 
 .project-details {

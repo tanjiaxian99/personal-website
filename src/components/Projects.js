@@ -4,13 +4,17 @@ import { projects } from "../data/data";
 
 const Projects = () => {
   return (
-    <section>
-      <h2>Projects</h2>
-
-      {projects.map((project, index) => (
-        <Project key={index} project={project} />
-      ))}
-    </section>
+    <>
+      <div className="section-anchor" id="projects"></div>
+      <section>
+        <h2>Projects</h2>
+        <div className="projects">
+          {projects.map((project, index) => (
+            <Project key={index} project={project} />
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 

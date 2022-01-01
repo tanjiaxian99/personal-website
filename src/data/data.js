@@ -35,7 +35,7 @@ export const header = {
   profilePic,
 };
 
-export const intro = {
+export const about = {
   writeup: [
     `I am a Jia Xian, a Year 2 Computer Science undergraduate at the National University of Singapore. 
   Since young, I have always had an appetite and aptitude for problem-solving. I find that once I am hooked on to a 
