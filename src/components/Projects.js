@@ -7,7 +7,7 @@ const Projects = () => {
     <>
       <div className="section-anchor" id="projects"></div>
       <section>
-        <h2>Projects</h2>
+        <h2 className="section-title">projects.</h2>
         <div className="projects">
           {projects.map((project, index) => (
             <Project key={index} project={project} />

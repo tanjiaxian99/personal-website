@@ -3,7 +3,7 @@ import Logos from "./Logos.js";
 
 const Skills = ({ inView }) => {
   return (
-    <div className={`skills slide-right-left ${inView ? "" : "reverse"}`}>
+    <div className={`slide-right-left ${inView ? "" : "reverse"}`}>
       <h2>skills.</h2>
       {skills.map((skillType) => (
         <>

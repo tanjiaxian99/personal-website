@@ -1,23 +1,29 @@
-import React from "react";
-import { InView } from "react-intersection-observer";
-import AboutWriteup from "./AboutWriteup.js";
-import Skills from "./Skills.js";
-import { Element } from "react-scroll";
+import { about } from "../data/data.js";
+import ClickableLogo from "./ClickableLogo.js";
 
-const About = () => {
+const IntroWriteup = ({ inView }) => {
+  const { writeup, logos } = about;
   return (
-    <>
-      <div className="section-anchor" id="about"></div>
-      <InView>
-        {({ inView, ref }) => (
-          <section className="about" ref={ref}>
-            <AboutWriteup inView={inView} />
-            <Skills inView={inView} />
-          </section>
-        )}
-      </InView>
-    </>
+    <div className="about">
+      <h2 className="section-title">about myself.</h2>
+
+      <div
+        className={`about-writeup slide-left-right ${inView ? "" : "reverse"}`}
+      >
+        {writeup.map((writeup, index) => (
+          <p className="justify-text" key={index}>
+            {writeup}
+          </p>
+        ))}
+
+        <div className="logos-container">
+          {logos.map((logo) => (
+            <ClickableLogo logo={logo} />
+          ))}
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default About;
+export default IntroWriteup;

@@ -80,8 +80,19 @@ footer {
   height: 2rem;
 }
 
+.section-title {
+  margin: 0 0 2rem 0;
+}
+
 .clickable-logo {
   margin: 0 2rem 0 0;
+}
+
+.date {
+  color: grey;
+  margin: 0;
+  font-weight: 100;
+  font-size: 1.2rem;
 }
 
 .link {
@@ -162,22 +173,19 @@ nav li {
   cursor: pointer;
 }
 
-.about {
+.about-skills {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+}
+
+.about {
+  max-width: 60%;
 }
 
 .about-writeup {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 60%;
-}
-
-.skills {
-  max-width: 30%;
 }
 
 .skill-title {
@@ -235,30 +243,30 @@ nav li {
   opacity: 1;
 }
 
-.date {
-  color: grey;
-  margin: 0;
-  font-weight: 100;
-  font-size: 1.2rem;
-}
-
 .projects {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 3rem;
 }
 
-.project-container {
+.project {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 
 .project-details {
   display: flex;
   flex-direction: column;
-  padding: 0 4rem 0 0;
   gap: 2rem;
+}
+
+.project-details > .date {
+  text-align: center;
+}
+
+.project-title {
+  text-align: center;
 }
 
 .project-urls {
@@ -273,8 +281,7 @@ nav li {
 }
 
 .project-img {
-  width: 35rem;
-  object-fit: cover;
+  height: 12rem;
 }
 
 /* ### Animations ### */

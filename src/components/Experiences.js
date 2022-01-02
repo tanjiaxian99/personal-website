@@ -13,7 +13,7 @@ const Experiences = () => {
     <>
       <div className="section-anchor" id="experiences"></div>
       <section>
-        <h2>Experiences</h2>
+        <h2 className="section-title">experiences.</h2>
 
         <VerticalTimeline layout="1-column left" lineColor="rgb(200, 200, 200)">
           {experiences.map((experience, index) => (

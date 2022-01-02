@@ -6,25 +6,30 @@ const Project = ({ project }) => {
   return (
     <InView>
       {({ inView, ref }) => (
-        <div className="project-container" ref={ref}>
+        <div className="project" ref={ref}>
+          <div className={`slide-right-left ${inView ? "" : "reverse"}`}>
+            <img
+              className="project-img"
+              src={project.screenshot}
+              alt={`${project.title} screenshot`}
+            />
+          </div>
           <div className={`slide-left-right ${inView ? "" : "reverse"}`}>
             <div className="project-details">
               <p className="date">{project.date}</p>
               {project.projectUrl ? (
-                <div className="project-url">
-                  <h3>
-                    <a
-                      className="link"
-                      href={project.projectUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {project.title}
-                    </a>
-                  </h3>
-                </div>
+                <h3 className="project-title">
+                  <a
+                    className="link"
+                    href={project.projectUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {project.title}
+                  </a>
+                </h3>
               ) : (
-                <h3>{project.title}</h3>
+                <h3 className="project-title">{project.title}</h3>
               )}
 
               <p>{project.writeup}</p>
@@ -47,14 +52,6 @@ const Project = ({ project }) => {
                 ))}
               </div>
             </div>
-          </div>
-
-          <div className={`slide-right-left ${inView ? "" : "reverse"}`}>
-            <img
-              className="project-img"
-              src={project.screenshot}
-              alt={`${project.title} screenshot`}
-            />
           </div>
         </div>
       )}
