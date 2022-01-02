@@ -54,7 +54,7 @@ li {
 
 section,
 footer {
-  margin: 4.5rem 12vw 0 12vw;
+  margin: 2rem 12vw 0 12vw;
 }
 
 /* ### UTILITIES ### */
@@ -77,7 +77,7 @@ footer {
 }
 
 .section-anchor {
-  height: 2rem;
+  height: 4rem;
 }
 
 .section-title {
@@ -252,7 +252,6 @@ nav li {
 .project {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .project-details {
@@ -281,7 +280,8 @@ nav li {
 }
 
 .project-img {
-  height: 12rem;
+  height: 14rem;
+  margin: 0 0 1rem 0;
 }
 
 /* ### Animations ### */
@@ -299,15 +299,27 @@ nav li {
   overflow-y: hidden;
 }
 
-.slide-up {
-  transition: all 0.7s cubic-bezier(0, 1, 0.5, 1);
+.slide-down-up {
+  transition: all 1.2s ease;
   top: 0%;
   position: relative;
 }
 
-.slide-down {
-  transition: all 0.7s cubic-bezier(0, 1, 0.5, 1);
+.slide-down-up.reverse {
+  transition: all 1s cubic-bezier(0.5, 0.5, 0.5, 1);
   top: 100%;
+  position: relative;
+}
+
+.slide-up-down {
+  transition: all 1.2s ease;
+  bottom: 0%;
+  position: relative;
+}
+
+.slide-up-down.reverse {
+  transition: all 1s cubic-bezier(0.5, 0.5, 0.5, 1);
+  bottom: 100%;
   position: relative;
 }
 

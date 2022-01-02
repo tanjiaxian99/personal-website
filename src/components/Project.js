@@ -2,19 +2,22 @@ import React from "react";
 import InView from "react-intersection-observer";
 import Logos from "./Logos";
 
-const Project = ({ project }) => {
+const Project = ({ project, index }) => {
   return (
     <InView>
       {({ inView, ref }) => (
-        <div className="project" ref={ref}>
-          <div className={`slide-right-left ${inView ? "" : "reverse"}`}>
+        <div className="slide-vert-container" ref={ref}>
+          <div
+            className={`project ${
+              index % 2 == 0 ? "slide-up-down" : "slide-down-up"
+            } ${inView ? "" : "reverse"}`}
+          >
             <img
               className="project-img"
               src={project.screenshot}
               alt={`${project.title} screenshot`}
             />
-          </div>
-          <div className={`slide-left-right ${inView ? "" : "reverse"}`}>
+
             <div className="project-details">
               <p className="date">{project.date}</p>
               {project.projectUrl ? (
