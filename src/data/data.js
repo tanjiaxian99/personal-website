@@ -27,9 +27,9 @@ import {
   unity,
 } from "./logos";
 import profilePic from "../images/profile-pic.jpg";
-import mahjongCalculator from "../images/mahjong-calculator.png";
-import nusfitness from "../images/nusfitness.png";
-import mahjong from "../images/mahjong.png";
+import mahjongCalculator from "../images/mahjong-calculator-mockup.png";
+import nusfitness from "../images/nusfitness-mockup.png";
+import mahjong from "../images/mahjong-mockup.png";
 
 export const header = {
   profilePic,
