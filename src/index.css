@@ -212,6 +212,7 @@ nav li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .logo-container {
@@ -247,10 +248,6 @@ nav li {
   flex-direction: row;
   gap: 3rem;
 }
-
-/* .projects:last-child {
-  margin: 0 0 0 2rem;
-} */
 
 .project {
   display: flex;
