@@ -6,7 +6,7 @@ const Project = ({ project, index }) => {
   return (
     <InView>
       {({ inView, ref }) => (
-        <div className="slide-vert-container" ref={ref}>
+        <div ref={ref}>
           <div
             className={`project ${
               index % 2 == 0 ? "slide-up-down" : "slide-down-up"
