@@ -41,15 +41,17 @@ const Project = ({ project, index }) => {
 
               <div className="links">
                 {project.urls.map(({ url, description }, index) => (
-                  <a
-                    className="link"
-                    href={url}
-                    target="_blank"
-                    rel="noreferrer"
-                    key={index}
-                  >
-                    {description}
-                  </a>
+                  <div>
+                    <a
+                      className="link"
+                      href={url}
+                      target="_blank"
+                      rel="noreferrer"
+                      key={index}
+                    >
+                      {description}
+                    </a>
+                  </div>
                 ))}
               </div>
             </div>

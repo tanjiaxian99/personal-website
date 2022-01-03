@@ -16,14 +16,13 @@ const Footer = () => {
         </a>
       </p>
       <p>
-        {"View the website's code on "}
         <a
           className="link"
           href="https://github.com/tanjiaxian99/personal-website"
           target="_blank"
           rel="noreferrer"
         >
-          Github
+          View the code on Github
         </a>
       </p>
     </footer>
