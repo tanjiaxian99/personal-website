@@ -115,7 +115,7 @@ export const projects = [
     urls: [
       {
         url: "https://github.com/tanjiaxian99/mahjong-calculator-telebot",
-        description: "View the code on Github.",
+        description: "View the code on Github",
       },
     ],
     logos: [node, mongoDb, telegram, heroku],
@@ -133,11 +133,11 @@ export const projects = [
     urls: [
       {
         url: "https://github.com/tanjiaxian99/nusfitness",
-        description: "View the code on Github.",
+        description: "View the code on Github",
       },
       {
         url: "https://www.youtube.com/watch?v=vt7mWXU9Njw",
-        description: "Watch the demo video here.",
+        description: "Watch the demo video here",
       },
     ],
     logos: [mongoDb, express, react, node, telegram, materialUi, heroku],
@@ -152,15 +152,10 @@ export const projects = [
     urls: [
       {
         url: "https://github.com/tanjiaxian99/Mahjong",
-        description: "View the code on Github.",
+        description: "View the code on Github",
       },
     ],
     logos: [cSharp, unity, photon],
     screenshot: mahjong,
   },
 ];
-
-export const footer = {
-  title: "Thanks for visiting!",
-  logos: [github, linkedin, email],
-};

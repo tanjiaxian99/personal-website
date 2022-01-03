@@ -16,6 +16,7 @@ function App() {
       <AboutSkills />
       <Experiences />
       <Projects />
+      <Footer />
     </>
   );
 }

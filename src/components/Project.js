@@ -39,19 +39,17 @@ const Project = ({ project, index }) => {
 
               <Logos logos={project.logos} />
 
-              <div className="project-urls">
+              <div className="links">
                 {project.urls.map(({ url, description }, index) => (
-                  <div className="project-url">
-                    <a
-                      className="link"
-                      href={url}
-                      target="_blank"
-                      rel="noreferrer"
-                      key={index}
-                    >
-                      {description}
-                    </a>
-                  </div>
+                  <a
+                    className="link"
+                    href={url}
+                    target="_blank"
+                    rel="noreferrer"
+                    key={index}
+                  >
+                    {description}
+                  </a>
                 ))}
               </div>
             </div>

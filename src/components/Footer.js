@@ -3,14 +3,29 @@ import ClickableLogo from "./ClickableLogo.js";
 
 const Footer = () => {
   return (
-    <footer>
-      <p>{footer.title}</p>
-
-      <div className="logos-container">
-        {footer.logos.map((logo) => (
-          <ClickableLogo logo={logo} />
-        ))}
-      </div>
+    <footer className="links">
+      <p>
+        {"Website design by "}
+        <a
+          className="link"
+          href="https://sg.linkedin.com/in/sebin-aum"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Sebin Aum
+        </a>
+      </p>
+      <p>
+        {"View the website's code on "}
+        <a
+          className="link"
+          href="https://github.com/tanjiaxian99/personal-website"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Github
+        </a>
+      </p>
     </footer>
   );
 };
