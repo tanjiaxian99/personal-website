@@ -288,12 +288,12 @@ nav li {
 
 /* ### Animations ### */
 .fade-in {
-  transition: opacity 0.5s;
+  transition: opacity 2s ease;
   opacity: 1;
 }
 
 .fade-out {
-  transition: opacity 0.5s;
+  transition: opacity 2s ease;
   opacity: 0;
 }
 
