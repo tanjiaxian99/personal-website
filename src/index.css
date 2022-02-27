@@ -4,17 +4,14 @@
 /* ### GENERAL STYLES ### */
 html {
   color: rgb(99, 99, 99);
-  font-size: 17px;
+  font-size: 12px;
   font-family: "Poppins";
-  line-height: 1.47059;
   overflow-x: hidden;
 }
 
 body {
-  line-height: 1.47059;
   margin: 0;
-  font-size: 1.4rem;
-  letter-spacing: -0.022rem;
+  font-size: 1.3rem;
 }
 
 h1,
@@ -28,7 +25,7 @@ h6 {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -126,13 +123,12 @@ footer {
 /* ### SITEWIDE ### */
 header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   background-color: rgb(115, 158, 223);
   color: white;
-  gap: 10rem;
-  font-size: 2rem;
+  /* gap: 8rem; */
 }
 
 header p {
@@ -140,7 +136,10 @@ header p {
 }
 
 .header-welcome {
-  margin: 12rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 0 0;
 }
 
 .header-name {
@@ -148,8 +147,8 @@ header p {
 }
 
 .profile-pic {
-  height: 30vw;
-  width: 30vw;
+  height: 15rem;
+  width: 15rem;
   border-radius: 50%;
 }
 
@@ -347,4 +346,294 @@ nav li {
   transition: all 1.2s cubic-bezier(0, 1, 0.5, 1);
   left: 100%;
   position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1200px) {
+  /* ### GENERAL STYLES ### */
+  html {
+    color: rgb(99, 99, 99);
+    font-size: 17px;
+    font-family: "Poppins";
+    line-height: 1.47059;
+    overflow-x: hidden;
+  }
+
+  body {
+    line-height: 1.47059;
+    margin: 0;
+    font-size: 1.4rem;
+    letter-spacing: -0.022rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    color: #1d1d1f;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin: 0;
+    text-align: justify;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    margin-left: 1em;
+  }
+
+  section,
+  footer {
+    margin: 2rem 12vw 0 12vw;
+  }
+
+  footer {
+    margin-bottom: 4rem;
+  }
+
+  /* ### UTILITIES ### */
+
+  /* css 100vw issues and fix
+    https://www.smashingmagazine.com/2021/04/css-overflow-issues/#:~:text=Viewport%20Units,won't%20cause%20horizontal%20scroll.&text=On%20Windows%2C%20scrollbars%20are%20always,default%2C%20so%20overflow%20will%20occur.
+    https://stackoverflow.com/questions/23367345/100vw-causing-horizontal-overflow-but-only-if-more-than-one/23367686
+*/
+  .viewport-fit {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+  }
+
+  .flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-anchor {
+    height: 4rem;
+  }
+
+  .section-title {
+    margin: 0 0 2rem 0;
+  }
+
+  .clickable-logo {
+    margin: 0 2rem 0 0;
+  }
+
+  .date {
+    color: grey;
+    margin: 0;
+    font-weight: 100;
+    font-size: 1.2rem;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    gap: 0.5rem;
+  }
+
+  .link {
+    color: black;
+    text-decoration: None;
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
+    transition: border-bottom 0.5s, padding-bottom 0.5s;
+    cursor: pointer;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .link:hover {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 8px;
+    transition: border-bottom 0.2s, padding-bottom 0.2s;
+  }
+
+  /* ### SITEWIDE ### */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(115, 158, 223);
+    color: white;
+    gap: 10rem;
+    font-size: 2rem;
+  }
+
+  header p {
+    margin: 0;
+  }
+
+  .header-welcome {
+    margin: 12rem 0 0 0;
+  }
+
+  .header-name {
+    color: white;
+  }
+
+  .profile-pic {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+  }
+
+  nav {
+    background-color: rgb(115, 158, 223);
+    color: white;
+    position: sticky;
+    top: 0;
+    padding: 0 12vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    z-index: 2;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 0;
+  }
+
+  nav li {
+    margin-left: 2.5rem;
+  }
+
+  .navbar-name {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-link {
+    cursor: pointer;
+  }
+
+  .about-skills {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about {
+    max-width: 60%;
+  }
+
+  .about-writeup {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .skill-title {
+    color: gray;
+    margin: 2rem 0 1rem 0;
+  }
+
+  .vertical-timeline {
+    margin: 0 !important;
+  }
+
+  .vertical-timeline-element-content {
+    padding: 0 1rem !important;
+  }
+
+  .experience-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logos-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+    margin: 0 2rem 0 0;
+  }
+
+  .logo-container:hover {
+    transform: scale(1.25);
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .logo-name {
+    margin: 0 -1000px;
+    font-size: 0.8rem;
+    opacity: 0;
+    white-space: nowrap;
+  }
+
+  .logo-container:hover > .logo-name {
+    transition: opacity 0.8s;
+    opacity: 1;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .project-details > .date {
+    text-align: center;
+  }
+
+  .project-title {
+    text-align: center;
+  }
+
+  .project-img {
+    height: 14rem;
+    margin: 0 0 1rem 0;
+  }
 }

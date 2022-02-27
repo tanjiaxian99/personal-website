@@ -8,7 +8,7 @@ const Header = ({ setHeaderInView }) => {
       onChange={(inView, entry) => setHeaderInView(inView)}
     >
       {({ ref }) => (
-        <header id="home" className="viewport-fit" ref={ref}>
+        <header className="viewport-fit" ref={ref}>
           <div className="header-welcome">
             <p>hello everybody, I am</p>
             <h1 className="header-name">Tan Jia Xian</h1>
