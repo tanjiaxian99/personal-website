@@ -1,5 +1,6 @@
 import { InView } from "react-intersection-observer";
-import { header } from "../data/data.js";
+import { header } from "../../data/data.js";
+import "./Header.css";
 
 const Header = ({ setHeaderInView }) => {
   return (
@@ -8,18 +9,16 @@ const Header = ({ setHeaderInView }) => {
       onChange={(inView, entry) => setHeaderInView(inView)}
     >
       {({ ref }) => (
-        <header className="viewport-fit" ref={ref}>
-          <div className="header-welcome">
-            <p>hello everybody, I am</p>
-            <h1 className="header-name">Tan Jia Xian</h1>
-            <p>Computer Science, Year 2</p>
-            <p>National University of Singapore (NUS)</p>
-          </div>
+        <header className="container" ref={ref}>
           <img
             src={header.profilePic}
             alt="Tan Jia Xian"
             className="profile-pic"
           />
+          <p>Hello everybody, I am</p>
+          <p className="name">Tan Jia Xian</p>
+          <p>Computer Science, Year 2</p>
+          <p>National University of Singapore (NUS)</p>
         </header>
       )}
     </InView>

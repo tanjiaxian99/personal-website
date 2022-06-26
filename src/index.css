@@ -1,7 +1,5 @@
-/* ### NEW FONTS ### */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-/* ### GENERAL STYLES ### */
 html {
   color: rgb(99, 99, 99);
   font-size: 12px;
@@ -13,6 +11,12 @@ body {
   margin: 0;
   font-size: 1.3rem;
 }
+
+p {
+  margin: 0;
+  text-align: justify;
+}
+/*
 
 h1,
 h2,
@@ -36,11 +40,6 @@ h3 {
   font-size: 1.5rem;
 }
 
-p {
-  margin: 0;
-  text-align: justify;
-}
-
 ul {
   padding-left: 0;
 }
@@ -58,12 +57,6 @@ footer {
   margin-bottom: 4rem;
 }
 
-/* ### UTILITIES ### */
-
-/* css 100vw issues and fix
-    https://www.smashingmagazine.com/2021/04/css-overflow-issues/#:~:text=Viewport%20Units,won't%20cause%20horizontal%20scroll.&text=On%20Windows%2C%20scrollbars%20are%20always,default%2C%20so%20overflow%20will%20occur.
-    https://stackoverflow.com/questions/23367345/100vw-causing-horizontal-overflow-but-only-if-more-than-one/23367686
-*/
 .viewport-fit {
   height: 100vh;
   width: 100vw;
@@ -120,7 +113,6 @@ footer {
   transition: border-bottom 0.2s, padding-bottom 0.2s;
 }
 
-/* ### SITEWIDE ### */
 header {
   display: flex;
   flex-direction: column-reverse;
@@ -128,22 +120,10 @@ header {
   align-items: center;
   background-color: rgb(115, 158, 223);
   color: white;
-  /* gap: 8rem; */
 }
 
 header p {
   margin: 0;
-}
-
-.header-welcome {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem 0 0 0;
-}
-
-.header-name {
-  color: white;
 }
 
 .profile-pic {
@@ -285,7 +265,6 @@ nav li {
   margin: 0 0 1rem 0;
 }
 
-/* ### Animations ### */
 .fade-in {
   transition: opacity 2s ease;
   opacity: 1;
@@ -346,13 +325,13 @@ nav li {
   transition: all 1.2s cubic-bezier(0, 1, 0.5, 1);
   left: 100%;
   position: relative;
-}
+} */
 
+/*
 @media only screen and (min-width: 768px) {
 }
 
 @media only screen and (min-width: 1200px) {
-  /* ### GENERAL STYLES ### */
   html {
     color: rgb(99, 99, 99);
     font-size: 17px;
@@ -412,12 +391,6 @@ nav li {
     margin-bottom: 4rem;
   }
 
-  /* ### UTILITIES ### */
-
-  /* css 100vw issues and fix
-    https://www.smashingmagazine.com/2021/04/css-overflow-issues/#:~:text=Viewport%20Units,won't%20cause%20horizontal%20scroll.&text=On%20Windows%2C%20scrollbars%20are%20always,default%2C%20so%20overflow%20will%20occur.
-    https://stackoverflow.com/questions/23367345/100vw-causing-horizontal-overflow-but-only-if-more-than-one/23367686
-*/
   .viewport-fit {
     height: 100vh;
     width: 100vw;
@@ -474,7 +447,6 @@ nav li {
     transition: border-bottom 0.2s, padding-bottom 0.2s;
   }
 
-  /* ### SITEWIDE ### */
   header {
     display: flex;
     flex-direction: row;
@@ -637,3 +609,4 @@ nav li {
     margin: 0 0 1rem 0;
   }
 }
+*/

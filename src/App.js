@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Header from "./components/Header.js";
+import Header from "./components/Header/Header.js";
 import Navbar from "./components/Navbar.js";
 import AboutSkills from "./components/AboutSkills.js";
 import Experiences from "./components/Experiences.js";
