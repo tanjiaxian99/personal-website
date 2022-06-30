@@ -2,7 +2,7 @@
 
 html {
   color: rgb(99, 99, 99);
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Poppins";
   overflow-x: hidden;
 }
@@ -130,39 +130,6 @@ header p {
   height: 15rem;
   width: 15rem;
   border-radius: 50%;
-}
-
-nav {
-  background-color: rgb(115, 158, 223);
-  color: white;
-  position: sticky;
-  top: 0;
-  padding: 0 12vw;
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.5rem;
-  z-index: 2;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 1rem 0;
-}
-
-nav li {
-  margin-left: 2.5rem;
-}
-
-.navbar-name {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-link {
-  cursor: pointer;
 }
 
 .about-skills {

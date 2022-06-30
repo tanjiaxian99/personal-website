@@ -1,0 +1,23 @@
+@import "../../styles/variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  background-color: $blue;
+  color: white;
+  height: 100vh;
+}
+
+.profilePic {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 2em;
+  font-weight: bold;
+}

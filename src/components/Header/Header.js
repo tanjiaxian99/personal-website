@@ -1,22 +1,22 @@
 import { InView } from "react-intersection-observer";
 import { header } from "../../data/data.js";
-import "./Header.css";
+import styles from "./Header.module.scss";
 
 const Header = ({ setHeaderInView }) => {
   return (
     <InView
       initialInView={true}
-      onChange={(inView, entry) => setHeaderInView(inView)}
+      onChange={(inView, _) => setHeaderInView(inView)}
     >
       {({ ref }) => (
-        <header className="container" ref={ref}>
+        <header className={styles.container} ref={ref} id="home">
           <img
             src={header.profilePic}
             alt="Tan Jia Xian"
-            className="profile-pic"
+            className={styles.profilePic}
           />
           <p>Hello everybody, I am</p>
-          <p className="name">Tan Jia Xian</p>
+          <p className={styles.name}>Tan Jia Xian</p>
           <p>Computer Science, Year 2</p>
           <p>National University of Singapore (NUS)</p>
         </header>

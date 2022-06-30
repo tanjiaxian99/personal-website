@@ -1,0 +1,17 @@
+// Fade
+.fade {
+  transition: opacity 0.8s ease;
+}
+
+.fadeHidden {
+  opacity: 0;
+}
+
+// Slide
+.slide {
+  transition: all 0.5s ease 0s;
+}
+
+.slideDownHidden {
+  transform: translateY(-120%);
+}
