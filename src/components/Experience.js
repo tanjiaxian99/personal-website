@@ -1,7 +1,7 @@
 import React from "react";
 import { InView } from "react-intersection-observer";
-import ClickableLogo from "./ClickableLogo";
-import Logos from "./Logos";
+import ClickableIcon from "./ClickableIcon/ClickableIcon.js";
+import Icons from "./Icons/Icons";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
 const Experience = ({ experience }) => {
@@ -17,7 +17,7 @@ const Experience = ({ experience }) => {
       <h4 className="date">{date}</h4>
       <h3 className="experience-title">
         <span>{title}</span> @
-        <ClickableLogo logo={companyLogo} />
+        <ClickableIcon icon={companyLogo} />
       </h3>
 
       <ul>
@@ -26,7 +26,7 @@ const Experience = ({ experience }) => {
         ))}
       </ul>
 
-      <Logos logos={logos} />
+      <Icons icons={logos} />
     </VerticalTimelineElement>
   );
 };

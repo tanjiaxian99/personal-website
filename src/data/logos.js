@@ -14,7 +14,7 @@ import javascriptLogo from "../logos/javascript.svg";
 import linkedinLogo from "../logos/linkedin.svg";
 import materialUiLogo from "../logos/material-ui.svg";
 import matplotlibLogo from "../logos/matplotlib.svg";
-import mongoDbLogo from "../logos/mongodb.svg";
+import mongoDbLogo from "../logos/mongodb.png";
 import nodeLogo from "../logos/nodejs.svg";
 import nusLogo from "../logos/nus.svg";
 import pandasLogo from "../logos/pandas.svg";

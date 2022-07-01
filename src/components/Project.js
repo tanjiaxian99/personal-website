@@ -1,6 +1,6 @@
 import React from "react";
 import InView from "react-intersection-observer";
-import Logos from "./Logos";
+import Icons from "./Icons/Icons.js";
 
 const Project = ({ project, index }) => {
   return (
@@ -40,7 +40,7 @@ const Project = ({ project, index }) => {
 
               <p>{project.writeup}</p>
 
-              <Logos logos={project.logos} />
+              <Icons icons={project.logos} />
 
               <div className="links">
                 {project.urls.map(({ url, description }, index) => (

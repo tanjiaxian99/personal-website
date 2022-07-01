@@ -1,0 +1,31 @@
+@import "../../styles/animations";
+@import "../../styles/variables";
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 8px 24px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.iconWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:hover > .iconName {
+    transition: opacity 0.8s;
+    opacity: 1;
+  }
+}
+
+.icon {
+  width: 40px;
+}
+
+.iconName {
+  @extend .fadeHidden;
+  margin: 0 -1000px;
+  font-size: $small;
+}

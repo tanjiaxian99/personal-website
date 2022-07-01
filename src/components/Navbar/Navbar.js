@@ -11,7 +11,7 @@ const Navbar = ({ headerInView }) => {
     document.body.style.overflow = isOpen ? "hidden" : "visible";
   }, [isOpen]);
 
-  Events.scrollEvent.register("begin", (to, _) => setOpen(false));
+  Events.scrollEvent.register("begin", () => setOpen(false));
 
   return (
     <>

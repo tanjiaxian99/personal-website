@@ -1,5 +1,4 @@
 import { footer } from "../data/data.js";
-import ClickableLogo from "./ClickableLogo.js";
 
 const Footer = () => {
   return (

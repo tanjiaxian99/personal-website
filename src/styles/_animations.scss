@@ -9,9 +9,13 @@
 
 // Slide
 .slide {
-  transition: all 0.5s ease 0s;
+  transition: all 0.7s ease 0s;
 }
 
 .slideDownHidden {
   transform: translateY(-120%);
+}
+
+.slideRightHidden {
+  transform: translateX(-100%);
 }
