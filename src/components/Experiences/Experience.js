@@ -1,7 +1,7 @@
 import React from "react";
 import { InView } from "react-intersection-observer";
-import ClickableIcon from "./ClickableIcon/ClickableIcon.js";
-import Icons from "./Icons/Icons";
+import ClickableIcon from "../ClickableIcon/ClickableIcon";
+import Icons from "../Icons/Icons";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
 const Experience = ({ experience }) => {

@@ -1,11 +1,10 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import ClickableIcon from "../ClickableIcon/ClickableIcon.js";
 import { about, skills } from "../../data/data.js";
 import Icons from "../Icons/Icons.js";
 import styles from "./About.module.scss";
 
-const AboutSkills = () => {
+const About = () => {
   const { logos: icons } = about;
   const { ref, inView } = useInView({
     threshold: 0.3,
@@ -59,4 +58,4 @@ const AboutSkills = () => {
   );
 };
 
-export default AboutSkills;
+export default About;

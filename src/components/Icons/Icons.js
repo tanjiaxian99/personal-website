@@ -1,4 +1,5 @@
 import React from "react";
+import ClickableIcon from "../ClickableIcon/ClickableIcon";
 import styles from "./Icons.module.scss";
 
 const Icons = ({ icons }) => {
@@ -6,19 +7,7 @@ const Icons = ({ icons }) => {
     <div className={styles.icons}>
       {icons.map(({ link, img, name }, index) => {
         return link ? (
-          <a
-            href={link}
-            target="_blank"
-            rel="noreferrer"
-            className={styles.icon}
-          >
-            <img
-              className={styles.icon}
-              src={img}
-              alt={name}
-              aria-label={name}
-            />
-          </a>
+          <ClickableIcon icon={{ link, img, name }} />
         ) : (
           <div className={styles.iconWrapper} key={index}>
             <img
