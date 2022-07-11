@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+@import "../../styles/animations";
+
+.container {
+  padding: 12px 28px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}

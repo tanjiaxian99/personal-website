@@ -37,6 +37,7 @@ const Navbar = ({ headerInView }) => {
             spy={true}
             smooth={true}
             duration={1000}
+            offset={-60}
             className={styles.link}
             key={i}
           >
