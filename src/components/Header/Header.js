@@ -15,9 +15,11 @@ const Header = ({ setHeaderInView }) => {
             alt="Tan Jia Xian"
             className={styles.profilePic}
           />
-          <p className={styles.name}>Tan Jia Xian</p>
-          <p>Computer Science, Year 2</p>
-          <p>National University of Singapore (NUS)</p>
+          <div className={styles.text}>
+            <p className={styles.name}>Tan Jia Xian</p>
+            <p>Computer Science, Year 2</p>
+            <p>National University of Singapore (NUS)</p>
+          </div>
         </header>
       )}
     </InView>

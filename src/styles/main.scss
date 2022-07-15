@@ -5,6 +5,10 @@ html {
   color: rgb(99, 99, 99);
   font-size: 16px;
   font-family: "Poppins";
+
+  @media only screen and (min-width: $bp-desktop) {
+    font-size: 18px;
+  }
 }
 
 body {
