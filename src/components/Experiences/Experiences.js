@@ -29,7 +29,7 @@ const Experiences = () => {
                 <div>
                   <h3>{title}</h3>
                   <h3 className={styles.company}>
-                    @ <ClickableIcon icon={companyLogo} />
+                    <ClickableIcon icon={companyLogo} />
                   </h3>
                 </div>
 
