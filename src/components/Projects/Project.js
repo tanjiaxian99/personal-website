@@ -5,7 +5,7 @@ import styles from "./Project.module.scss";
 
 const Project = ({ project }) => {
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.15,
   });
 
   return (

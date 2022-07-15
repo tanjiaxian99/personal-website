@@ -7,18 +7,16 @@ import styles from "./About.module.scss";
 const About = () => {
   const { logos: icons } = about;
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.15,
   });
 
   return (
     <section id="about" ref={ref}>
-      <div
-        className={`${styles.container} ${styles.slide} ${
-          !inView && styles.slideRightHidden
-        }`}
-      >
-        <h2>about myself.</h2>
-        <div>
+      <div className={styles.container}>
+        <h2>about.</h2>
+        <div
+          className={`${styles.slide} ${!inView && styles.slideRightHidden}`}
+        >
           <p>
             I am Jia Xian, a Year 2 Computer Science undergraduate at the
             National University of Singapore (NUS). Since young, I have always

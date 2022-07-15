@@ -8,19 +8,19 @@ import styles from "./Experiences.module.scss";
 
 const Experiences = () => {
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.15,
   });
 
   return (
     <section id="experiences" ref={ref}>
-      <div
-        className={`${styles.container} ${styles.slide} ${
-          !inView && styles.slideRightHidden
-        }`}
-      >
+      <div className={`${styles.container}`}>
         <h2>experiences.</h2>
 
-        <div className={styles.experiences}>
+        <div
+          className={`${styles.experiences} ${styles.slide} ${
+            !inView && styles.slideRightHidden
+          } `}
+        >
           {experiences.map((experience, i) => {
             const { date, title, companyLogo, pointers, logos } = experience;
             return (
