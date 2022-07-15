@@ -15,7 +15,6 @@ const Header = ({ setHeaderInView }) => {
             alt="Tan Jia Xian"
             className={styles.profilePic}
           />
-          <p>Hello everybody, I am</p>
           <p className={styles.name}>Tan Jia Xian</p>
           <p>Computer Science, Year 2</p>
           <p>National University of Singapore (NUS)</p>
