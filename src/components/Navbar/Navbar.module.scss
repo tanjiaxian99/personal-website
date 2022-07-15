@@ -12,6 +12,11 @@
   height: 48px;
   z-index: 9999;
   font-size: $large;
+
+  @media only screen and (min-width: $bp-tablet) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .innerContainer {

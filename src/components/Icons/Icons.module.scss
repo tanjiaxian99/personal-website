@@ -7,6 +7,10 @@
   gap: 12px 24px;
   flex-wrap: wrap;
   margin-top: 12px;
+
+  @media only screen and (min-width: $bp-tablet) {
+    margin-top: 24px;
+  }
 }
 
 .iconWrapper {
