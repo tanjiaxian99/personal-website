@@ -1,5 +1,6 @@
 @import "../../styles/animations";
 @import "../../styles/variables";
+@import "../../styles/components";
 
 .icons {
   display: flex;
@@ -13,15 +14,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 4px;
 
   &:hover > .iconName {
     transition: opacity 0.8s;
     opacity: 1;
   }
-}
-
-.icon {
-  width: 40px;
 }
 
 .iconName {

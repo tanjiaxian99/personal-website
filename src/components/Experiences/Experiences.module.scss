@@ -1,20 +1,12 @@
 @import "../../styles/variables";
 @import "../../styles/animations";
-
-.container {
-  padding: 12px 28px;
-}
+@import "../../styles/layout";
+@import "../../styles/components";
 
 .experiences {
   display: flex;
   flex-direction: column;
   gap: 32px;
-}
-
-.date {
-  color: grey;
-  margin: 0;
-  font-weight: 100;
 }
 
 .list {

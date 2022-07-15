@@ -1,9 +1,6 @@
 @import "../../styles/variables";
 @import "../../styles/animations";
-
-.container {
-  padding: 12px 28px;
-}
+@import "../../styles/layout";
 
 .projects {
   display: flex;
