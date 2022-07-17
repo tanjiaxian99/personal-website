@@ -1,3 +1,22 @@
 @import "../../styles/variables";
 @import "../../styles/animations";
 @import "../../styles/layout";
+
+.container {
+  @media only screen and (min-width: $bp-desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.writeup {
+  @media only screen and (min-width: $bp-desktop) {
+    width: 60%;
+  }
+}
+
+.skills {
+  @media only screen and (min-width: $bp-desktop) {
+    width: 30%;
+  }
+}

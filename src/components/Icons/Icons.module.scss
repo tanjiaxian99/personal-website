@@ -11,6 +11,10 @@
   @media only screen and (min-width: $bp-tablet) {
     margin-top: 24px;
   }
+
+  @media only screen and (min-width: $bp-desktop) {
+    gap: 12px 36px;
+  }
 }
 
 .iconWrapper {

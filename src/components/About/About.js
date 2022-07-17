@@ -1,6 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { about, skills } from "../../data/data.js";
+import useBreakpointValue from "../../hooks/useBreakpointValue";
 import Icons from "../Icons/Icons.js";
 import styles from "./About.module.scss";
 
@@ -9,10 +10,11 @@ const About = () => {
   const { ref, inView } = useInView({
     threshold: 0.15,
   });
+  const desktopView = useBreakpointValue({ base: false, desktop: true });
 
   return (
-    <section id="about" ref={ref}>
-      <div className={styles.container}>
+    <section className={styles.container} id="about" ref={ref}>
+      <div className={styles.writeup}>
         <h2>about.</h2>
         <div
           className={`${styles.slide} ${!inView && styles.slideRightHidden}`}
@@ -38,8 +40,9 @@ const About = () => {
         </div>
       </div>
       <div
-        className={`${styles.container} ${styles.slide} ${
-          !inView && styles.slideRightHidden
+        className={`${styles.skills} ${styles.slide} ${
+          !inView &&
+          (desktopView ? styles.slideLeftHidden : styles.slideRightHidden)
         }`}
       >
         <h2>skills.</h2>
