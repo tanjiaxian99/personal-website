@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+
+.link {
+  color: black;
+  font-weight: 700;
+  font-size: $large;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 2px solid white;
+    transition: border-bottom 0.2s;
+  }
+
+  @media only screen and (min-width: $bp-tablet) {
+    color: white;
+    font-weight: 400;
+  }
+}

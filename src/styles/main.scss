@@ -21,6 +21,12 @@ p {
   text-align: justify;
 }
 
+h2 {
+  @media only screen and (min-width: $bp-desktop) {
+    margin: 32px 0px;
+  }
+}
+
 h3 {
   margin: 16px 0;
 }

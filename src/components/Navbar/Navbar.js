@@ -2,10 +2,13 @@ import { Link, Events } from "react-scroll";
 import styles from "./Navbar.module.scss";
 import Hamburger from "hamburger-react";
 import { useState, useEffect } from "react";
+import useBreakpointValue from "../../hooks/useBreakpointValue";
+import NavbarLink from "../NavbarLink/NavbarLink";
 
 const Navbar = ({ headerInView }) => {
   const links = ["home", "about", "experiences", "projects"];
   const [isOpen, setOpen] = useState(false);
+  const desktopView = useBreakpointValue({ base: false, desktop: true });
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "visible";
@@ -22,27 +25,25 @@ const Navbar = ({ headerInView }) => {
           }`}
         >
           <p>Jia Xian.</p>
-          <Hamburger rounded toggled={isOpen} toggle={setOpen} />
+          {!desktopView && (
+            <Hamburger rounded toggled={isOpen} toggle={setOpen} />
+          )}
+          {desktopView && (
+            <div className={styles.desktopLinks}>
+              {links.map((link, i) => (
+                <NavbarLink link={link} key={i} />
+              ))}
+            </div>
+          )}
         </div>
       </nav>
       <div
-        className={`${styles.links} ${styles.slide} ${
+        className={`${styles.mobileLinks} ${styles.slide} ${
           !isOpen && styles.slideDownHidden
         }`}
       >
         {links.map((link, i) => (
-          <Link
-            activeClass="active"
-            to={link}
-            spy={true}
-            smooth={true}
-            duration={1000}
-            offset={-60}
-            className={styles.link}
-            key={i}
-          >
-            {link}.
-          </Link>
+          <NavbarLink link={link} key={i} />
         ))}
       </div>
     </>

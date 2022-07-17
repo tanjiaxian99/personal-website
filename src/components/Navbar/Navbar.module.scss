@@ -1,6 +1,7 @@
 @import "../../styles/variables";
 @import "../../styles/animations";
 @import "../../styles/layout";
+@import "../../styles/components";
 
 .container {
   padding-top: 8px;
@@ -9,34 +10,35 @@
   color: white;
   position: sticky;
   top: 0;
-  height: 48px;
   z-index: 9999;
   font-size: $large;
-
-  @media only screen and (min-width: $bp-tablet) {
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
 }
 
 .innerContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 48px;
+
+  @media only screen and (min-width: $bp-desktop) {
+    height: 60px;
+  }
 }
 
-.links {
+.desktopLinks {
+  display: flex;
+  gap: 32px;
+}
+
+.mobileLinks {
   padding: 20px 28px;
   display: flex;
   flex-direction: column;
   background-color: $gray;
-  color: black;
-  font-weight: 700;
   gap: 40px;
   position: fixed;
   top: 64px;
   z-index: 2;
   min-height: calc(100vh - 64px);
   width: 100%;
-  font-size: $large;
 }
