@@ -11,7 +11,7 @@ const Navbar = ({ headerInView }) => {
   const desktopView = useBreakpointValue({ base: false, desktop: true });
 
   useEffect(() => {
-    document.body.style.overflow = isOpen ? "hidden" : "visible";
+    document.body.style.overflowY = isOpen ? "hidden" : "visible";
   }, [isOpen]);
 
   Events.scrollEvent.register("begin", () => setOpen(false));
