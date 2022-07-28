@@ -1,3 +1,5 @@
+@import "./variables";
+
 // Fade
 .fade {
   transition: opacity 0.8s ease;
@@ -26,4 +28,46 @@
 
 .slideRightHidden {
   transform: translateX(-120%);
+}
+
+// Flip Card
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flipCard {
+  height: 800px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flipCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip */
+.flip {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flipCardFront,
+.flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flipCardFront {
+  background-color: $gray;
+}
+
+/* Style the back side */
+.flipCardBack {
+  transform: rotateY(180deg);
 }

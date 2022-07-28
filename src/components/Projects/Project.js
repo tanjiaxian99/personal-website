@@ -3,53 +3,56 @@ import Icons from "../Icons/Icons.js";
 import { useInView } from "react-intersection-observer";
 import styles from "./Project.module.scss";
 
-const Project = ({ project }) => {
+const Project = ({ project, flipDelay }) => {
   const { ref, inView } = useInView({
-    threshold: 0.15,
+    threshold: 0.4,
   });
 
   return (
-    <div ref={ref}>
+    <div className={styles.flipCard} ref={ref}>
       <div
-        className={`${styles.project} ${styles.slide} ${
-          !inView && styles.slideRightHidden
-        }`}
+        className={`${styles.flipCardInner} ${inView && styles.flip}`}
+        style={{ transitionDelay: flipDelay }}
       >
-        <img src={project.screenshot} alt={`${project.title} screenshot`} />
+        <div className={styles.flipCardFront}></div>
 
-        <h4 className={styles.date}>{project.date}</h4>
-        <h3>
-          {project.projectUrl ? (
-            <a
-              className={styles.link}
-              href={project.projectUrl}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {project.title}
-            </a>
-          ) : (
-            <span className={styles.title}>{project.title}</span>
-          )}
-        </h3>
+        <div className={`${styles.project} ${styles.flipCardBack}`}>
+          <img src={project.screenshot} alt={`${project.title} screenshot`} />
 
-        <p>{project.writeup}</p>
-        <Icons icons={project.logos} />
-
-        <div className={styles.links}>
-          {project.urls.map(({ url, description }, index) => (
-            <div>
+          <h4 className={styles.date}>{project.date}</h4>
+          <h3 className={styles.title}>
+            {project.projectUrl ? (
               <a
                 className={styles.link}
-                href={url}
+                href={project.projectUrl}
                 target="_blank"
                 rel="noreferrer"
-                key={index}
               >
-                {description}
+                {project.title}
               </a>
-            </div>
-          ))}
+            ) : (
+              <span>{project.title}</span>
+            )}
+          </h3>
+
+          <p>{project.writeup}</p>
+          <Icons icons={project.logos} />
+
+          <div className={styles.links}>
+            {project.urls.map(({ url, description }, index) => (
+              <div>
+                <a
+                  className={styles.link}
+                  href={url}
+                  target="_blank"
+                  rel="noreferrer"
+                  key={index}
+                >
+                  {description}
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
