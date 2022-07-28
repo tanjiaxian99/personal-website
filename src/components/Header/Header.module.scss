@@ -1,6 +1,7 @@
 @import "../../styles/variables.scss";
 
 .container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +9,6 @@
   gap: 16px;
   background-color: $blue;
   color: white;
-  height: 100vh;
 
   @media only screen and (min-width: $bp-desktop) {
     flex-direction: row-reverse;

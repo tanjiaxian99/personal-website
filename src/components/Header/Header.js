@@ -1,5 +1,6 @@
 import { InView } from "react-intersection-observer";
 import { header } from "../../data/data.js";
+import ScrollDown from "../ScrollDown/ScrollDown.js";
 import styles from "./Header.module.scss";
 
 const Header = ({ setHeaderInView }) => {
@@ -20,6 +21,7 @@ const Header = ({ setHeaderInView }) => {
             <p>Computer Science, Year 2</p>
             <p>National University of Singapore (NUS)</p>
           </div>
+          <ScrollDown />
         </header>
       )}
     </InView>
