@@ -8,13 +8,13 @@
   transition: border-bottom 0.5s;
   cursor: pointer;
 
-  &:hover {
-    border-bottom: 2px solid white;
-    transition: border-bottom 0.2s;
-  }
-
   @media only screen and (min-width: $bp-desktop) {
     color: white;
     font-weight: 400;
+
+    &:hover {
+      border-bottom: 2px solid white;
+      transition: border-bottom 0.2s;
+    }
   }
 }
