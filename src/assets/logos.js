@@ -1,16 +1,20 @@
 import antDesignLogo from "./logos/ant-design.svg";
 import cLogo from "./logos/c.svg";
+import chakraUiLogo from "./logos/chakra-ui.png";
 import cssLogo from "./logos/css-3.svg";
 import cSharpLogo from "./logos/c-sharp.svg";
 import dstaLogo from "./logos/dsta.png";
+import dynamoDbLogo from "./logos/dynamoDb.png";
 import emailLogo from "./logos/email.svg";
 import expressLogo from "./logos/express.svg";
 import gitLogo from "./logos/git.svg";
 import githubLogo from "./logos/github.svg";
+import govtechLogo from "./logos/govtech.gif";
 import herokuLogo from "./logos/heroku.svg";
 import htmlLogo from "./logos/html-5.svg";
 import javaLogo from "./logos/java.svg";
 import javascriptLogo from "./logos/javascript.svg";
+import jestLogo from "./logos/jest.svg";
 import linkedinLogo from "./logos/linkedin.svg";
 import materialUiLogo from "./logos/material-ui.svg";
 import matplotlibLogo from "./logos/matplotlib.svg";
@@ -23,14 +27,18 @@ import pythonLogo from "./logos/python.svg";
 import railsLogo from "./logos/rails.svg";
 import reactLogo from "./logos/react.svg";
 import rubyLogo from "./logos/ruby.png";
+import sassLogo from "./logos/sass.svg";
 import scikitLearnLogo from "./logos/scikit-learn.svg";
 import telegramLogo from "./logos/telegram.svg";
+import typescriptLogo from "./logos/typescript.svg";
 import unityLogo from "./logos/unity.svg";
 
 export const antDesign = { name: "Ant Design", img: antDesignLogo };
 export const c = { name: "C", img: cLogo };
+export const chakraUi = { name: "Chakra UI", img: chakraUiLogo };
 export const css = { name: "CSS", img: cssLogo };
 export const cSharp = { name: "C#", img: cSharpLogo };
+export const dynamoDb = { name: "DynamoDB", img: dynamoDbLogo };
 export const dsta = {
   name: "DSTA",
   img: dstaLogo,
@@ -48,10 +56,16 @@ export const github = {
   img: githubLogo,
   link: "https://github.com/tanjiaxian99",
 };
+export const govtech = {
+  name: "GovTech",
+  img: govtechLogo,
+  link: "https://www.tech.gov.sg/",
+};
 export const heroku = { name: "Heroku", img: herokuLogo };
 export const html = { name: "HTML", img: htmlLogo };
 export const java = { name: "Java", img: javaLogo };
 export const javascript = { name: "Javascript", img: javascriptLogo };
+export const jest = { name: "Jest", img: jestLogo };
 export const linkedin = {
   name: "LinkedIn",
   img: linkedinLogo,
@@ -72,6 +86,8 @@ export const python = { name: "Python", img: pythonLogo };
 export const rails = { name: "Rails", img: railsLogo };
 export const react = { name: "React", img: reactLogo };
 export const ruby = { name: "Ruby", img: rubyLogo };
+export const sass = { name: "Sass", img: sassLogo };
 export const scikitLearn = { name: "scikit-learn", img: scikitLearnLogo };
 export const telegram = { name: "Telegram Bot API", img: telegramLogo };
+export const typescript = { name: "Typescript", img: typescriptLogo };
 export const unity = { name: "Unity3D", img: unityLogo };
