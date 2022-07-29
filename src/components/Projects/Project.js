@@ -12,7 +12,11 @@ const Project = ({ project, flipDelay }) => {
 
   const content = (
     <>
-      <img src={project.screenshot} alt={`${project.title} screenshot`} />
+      <img
+        src={project.screenshot}
+        alt={`${project.title} screenshot`}
+        className={styles.screenshot}
+      />
 
       <h4 className={styles.date}>{project.date}</h4>
       <h3 className={styles.title}>
