@@ -45,11 +45,11 @@ Clone the [repository](https://github.com/tanjiaxian99/personal-website) onto yo
 
 Install dependencies by running
 
-     npm install
+     yarn install
 
 Once done, start the app with
 
-     npm start
+     yarn start
 
 ## Status
 
