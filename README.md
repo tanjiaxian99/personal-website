@@ -1,8 +1,6 @@
 # Personal Website
 
-My personal website written using React.
-
-> Updates as of 6 Aug 2021: There is no expected date of release for v0.1.0. Do follow this page for more updates. Current development progress can be found in the `develop` branch.
+My portfolio website written using React, Javascript and Sass.
 
 ## Table of contents
 
@@ -16,11 +14,19 @@ My personal website written using React.
 
 ## General info
 
-A Single Page Application that contains my personal portfolio and renders dynamically with scrolling.
+A static page that contains my personal portfolio.
 
 ## Screenshots
 
-Coming soon!
+![Personal website: About Page - Desktop View](https://i.imgur.com/Rez5jlq.png)
+![Personal Website: Projects Page - Desktop View](https://i.imgur.com/zIUgrAF.png)
+
+<p float="left">
+     <img src="https://i.imgur.com/8bXdmuv.jpg" width="24.5%">
+     <img src="https://i.imgur.com/wPbVw83.jpg" width="24.5%">
+     <img src="https://i.imgur.com/5iGjNYx.jpg" width="24.5%">
+     <img src="https://i.imgur.com/XfryQnz.jpg" width="24.5%">
+</p>
 
 ## Features
 
@@ -29,29 +35,26 @@ Coming soon!
 
 ## Technology
 
-- HTML/CSS/Javascript
 - React
-- Heroku
+- Javascript
+- Sass
 
 ## Setup
+
 Clone the [repository](https://github.com/tanjiaxian99/personal-website) onto your local machine. Install [Node.js](https://nodejs.org/en/download/).
-
-Install Yarn by running
-
-     npm i --global yarn
 
 Install dependencies by running
 
-     yarn install
+     npm install
 
 Once done, start the app with
 
-    yarn start
+     npm start
 
 ## Status
 
-Project is: _in progress. No expected completion date for v0.1.0.
+Project is stable. View the website [here](http://www.tanjiaxian99.com)!
 
 ## Contact
 
-Created by [Jia Xian](https://www.linkedin.com/in/jia-xian-tan-5490721a0/) and [Jereld](https://www.linkedin.com/in/jereld-lim/)
+Created by [Jia Xian](https://www.linkedin.com/in/tanjiaxian99/)
