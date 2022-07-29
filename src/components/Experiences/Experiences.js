@@ -6,7 +6,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import StarIcon from "@mui/icons-material/Star";
+import StarIcon from "../../assets/logos/star.svg";
 import Experience from "./Experience";
 import {
   nus,
@@ -110,8 +110,11 @@ const Experiences = () => {
             ))}
 
             <VerticalTimelineElement
-              iconStyle={{ background: "rgb(115, 158, 223)", color: "#fff" }}
-              icon={<StarIcon />}
+              iconStyle={{
+                display: "flex",
+                background: "rgb(115, 158, 223)",
+              }}
+              icon={<img src={StarIcon} className={styles.starIcon} />}
               intersectionObserverProps={{ triggerOnce: false }}
             />
           </VerticalTimeline>
