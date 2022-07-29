@@ -1,9 +1,14 @@
+import { useLayoutEffect, useState } from "react";
 import { InView } from "react-intersection-observer";
 import { header } from "../../data/data.js";
 import ScrollDown from "../ScrollDown/ScrollDown.js";
 import styles from "./Header.module.scss";
 
 const Header = ({ setHeaderInView }) => {
+  useLayoutEffect(() => {
+    document.getElementById("home").style.height = window.innerHeight + "px";
+  }, []);
+
   return (
     <InView
       initialInView={true}
