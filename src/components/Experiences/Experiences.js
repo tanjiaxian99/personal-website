@@ -59,9 +59,9 @@ const experiences = [
     pointers: [
       `Increased Navy ship engine fault detection rate by 45% through analyzing existing Navy Ship engine data using 
       Pandas and scikit-learn to develop a statistical model that predicts ship engine faults.`,
-      `Challenges include working with hundreds of millions of rows of data and filtering the relevant ones, selecting 
-      relevant ship engine sensors that correlate with the specified faults, and usingMatplotlib to stitch together 
-      various time-series graphs.`,
+      `Challenges include writing a Python script that optimally searches for anomalies within hundreds of millions of 
+      rows of data, selecting relevant ship engine sensors that correlate with the specified faults, and using 
+      Matplotlib to stitch together various time-series graphs.`,
     ],
     logos: [python, pandas, matplotlib, scikitLearn],
   },
