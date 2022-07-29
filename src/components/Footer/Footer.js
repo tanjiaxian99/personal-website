@@ -1,4 +1,3 @@
-import { footer } from "../../data/data.js";
 import { useInView } from "react-intersection-observer";
 import styles from "./Footer.module.scss";
 

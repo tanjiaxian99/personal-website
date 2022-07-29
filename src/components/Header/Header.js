@@ -1,7 +1,7 @@
-import { useLayoutEffect, useState } from "react";
+import { useLayoutEffect } from "react";
 import { InView } from "react-intersection-observer";
 import ScrollDown from "../ScrollDown/ScrollDown.js";
-import profilePic from "../../images/profile-pic.jpg";
+import profilePic from "../../assets/images/profile-pic.jpg";
 import styles from "./Header.module.scss";
 
 const Header = ({ setHeaderInView }) => {

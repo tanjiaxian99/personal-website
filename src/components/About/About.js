@@ -13,7 +13,7 @@ import {
   node,
   materialUi,
   git,
-} from "../../data/logos.js";
+} from "../../assets/logos.js";
 import useBreakpointValue from "../../hooks/useBreakpointValue";
 import Icons from "../Icons/Icons.js";
 import styles from "./About.module.scss";

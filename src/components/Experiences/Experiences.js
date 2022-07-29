@@ -16,7 +16,7 @@ import {
   pandas,
   matplotlib,
   scikitLearn,
-} from "../../data/logos.js";
+} from "../../assets/logos.js";
 import styles from "./Experiences.module.scss";
 
 const experiences = [

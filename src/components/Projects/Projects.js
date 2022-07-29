@@ -11,10 +11,10 @@ import {
   cSharp,
   unity,
   photon,
-} from "../../data/logos.js";
-import mahjongCalculator from "../../images/mahjong-calculator-mockup.png";
-import nusfitness from "../../images/nusfitness-mockup.png";
-import mahjong from "../../images/mahjong-mockup.png";
+} from "../../assets/logos.js";
+import mahjongCalculator from "../../assets/images/mahjong-calculator-mockup.png";
+import nusfitness from "../../assets/images/nusfitness-mockup.png";
+import mahjong from "../../assets/images/mahjong-mockup.png";
 import styles from "./Projects.module.scss";
 
 export const projects = [
