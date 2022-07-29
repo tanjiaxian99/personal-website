@@ -30,8 +30,8 @@ A static page that contains my personal portfolio.
 
 ## Features
 
-- Single page application that renders dynamically with scrolling
-- Custom CSS animations
+- Used Intersection Observer API that detects a change in view
+- Custom CSS animations that activate on scroll
 
 ## Technology
 
