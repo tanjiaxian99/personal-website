@@ -114,7 +114,7 @@ const Experiences = () => {
                 display: "flex",
                 background: "rgb(115, 158, 223)",
               }}
-              icon={<img src={StarIcon} className={styles.starIcon} />}
+              icon={<img src={StarIcon} alt="" className={styles.starIcon} />}
               intersectionObserverProps={{ triggerOnce: false }}
             />
           </VerticalTimeline>

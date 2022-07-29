@@ -1,4 +1,4 @@
-import { Link, Events } from "react-scroll";
+import { Events } from "react-scroll";
 import styles from "./Navbar.module.scss";
 import Hamburger from "hamburger-react";
 import { useState, useEffect } from "react";

@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 
 const useBreakpointValue = (args) => {
   const [value, setValue] = useState(args.base);
@@ -18,7 +18,7 @@ const useBreakpointValue = (args) => {
     updateValue();
     window.addEventListener("resize", updateValue);
     return () => window.removeEventListener("resize", updateValue);
-  }, []);
+  }, [args]);
 
   return value;
 };
