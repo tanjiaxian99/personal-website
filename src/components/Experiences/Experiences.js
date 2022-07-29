@@ -1,5 +1,4 @@
 import React from "react";
-import { experiences } from "../../data/data.js";
 import { useInView } from "react-intersection-observer";
 import useBreakpointValue from "../../hooks/useBreakpointValue";
 import {
@@ -9,14 +8,48 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import StarIcon from "@mui/icons-material/Star";
 import Experience from "./Experience";
+import {
+  nus,
+  java,
+  dsta,
+  python,
+  pandas,
+  matplotlib,
+  scikitLearn,
+} from "../../data/logos.js";
 import styles from "./Experiences.module.scss";
 
+const experiences = [
+  {
+    title: "Data Structures and Algorithms Teaching Assistant",
+    companyLogo: nus,
+    date: "Aug 2021 - Dec 2021",
+    pointers: [
+      `Teach 23 students with another Teaching Assistant to guide students in their lab assignments, answer questions on
+      data structures and algorithms, and give constructive feedback for their work.`,
+    ],
+    logos: [java],
+  },
+  {
+    title: "Data Analyst Intern",
+    companyLogo: dsta,
+    date: "Jan 2020 - Mar 2020",
+    pointers: [
+      `Increased Navy ship engine fault detection rate by 45% through analyzing existing Navy Ship engine data using 
+      Pandas and scikit-learn to develop a statistical model that predicts ship engine faults.`,
+      `Challenges include working with hundreds of millions of rows of data and filtering the relevant ones, selecting 
+      relevant ship engine sensors that correlate with the specified faults, and usingMatplotlib to stitch together 
+      various time-series graphs.`,
+    ],
+    logos: [python, pandas, matplotlib, scikitLearn],
+  },
+];
+
 const Experiences = () => {
+  const desktopView = useBreakpointValue({ base: false, desktop: true });
   const { ref, inView } = useInView({
     threshold: 0.15,
   });
-
-  const desktopView = useBreakpointValue({ base: false, desktop: true });
 
   return (
     <section id="experiences" ref={ref}>

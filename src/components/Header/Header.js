@@ -1,7 +1,7 @@
 import { useLayoutEffect, useState } from "react";
 import { InView } from "react-intersection-observer";
-import { header } from "../../data/data.js";
 import ScrollDown from "../ScrollDown/ScrollDown.js";
+import profilePic from "../../images/profile-pic.jpg";
 import styles from "./Header.module.scss";
 
 const Header = ({ setHeaderInView }) => {
@@ -17,7 +17,7 @@ const Header = ({ setHeaderInView }) => {
       {({ ref }) => (
         <header className={styles.container} ref={ref} id="home">
           <img
-            src={header.profilePic}
+            src={profilePic}
             alt="Tan Jia Xian"
             className={styles.profilePic}
           />

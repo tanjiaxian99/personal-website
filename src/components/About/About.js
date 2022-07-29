@@ -1,12 +1,35 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import { about, skills } from "../../data/data.js";
+import {
+  github,
+  linkedin,
+  email,
+  javascript,
+  python,
+  java,
+  mongoDb,
+  express,
+  react,
+  node,
+  materialUi,
+  git,
+} from "../../data/logos.js";
 import useBreakpointValue from "../../hooks/useBreakpointValue";
 import Icons from "../Icons/Icons.js";
 import styles from "./About.module.scss";
 
+const skills = [
+  {
+    title: "languages",
+    logos: [javascript, python, java],
+  },
+  {
+    title: "frameworks & tools",
+    logos: [mongoDb, express, react, node, materialUi, git],
+  },
+];
+
 const About = () => {
-  const { logos: icons } = about;
   const { ref, inView } = useInView({
     threshold: 0.15,
   });
@@ -36,7 +59,7 @@ const About = () => {
             world, and it is my hope that one day, I am sufficiently capable to
             solve one of them.
           </p>
-          <Icons icons={icons} />
+          <Icons icons={[github, linkedin, email]} />
         </div>
       </div>
       <div
