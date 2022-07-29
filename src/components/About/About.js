@@ -7,12 +7,13 @@ import {
   javascript,
   python,
   java,
-  mongoDb,
-  express,
   react,
-  node,
-  materialUi,
   git,
+  typescript,
+  sass,
+  chakraUi,
+  dynamoDb,
+  jest,
 } from "../../assets/logos.js";
 import useBreakpointValue from "../../hooks/useBreakpointValue";
 import Icons from "../Icons/Icons.js";
@@ -21,11 +22,11 @@ import styles from "./About.module.scss";
 const skills = [
   {
     title: "languages",
-    logos: [javascript, python, java],
+    logos: [typescript, javascript, python, java],
   },
   {
     title: "frameworks & tools",
-    logos: [mongoDb, express, react, node, materialUi, git],
+    logos: [react, sass, chakraUi, dynamoDb, jest, git],
   },
 ];
 
