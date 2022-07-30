@@ -32,7 +32,7 @@ const experiences = [
     companyLogo: govtech,
     date: "May 2022 - Jul 2022",
     pointers: [
-      `Reduced food wastage amongst food beneficiaries by 20\% by using React and DynamoDB to consolidate and display 
+      `Reduced food wastage amongst food beneficiaries by 20% by using React and DynamoDB to consolidate and display 
       aggregated food donations from ~100 food benefactors.`,
       `Optimised and scaled access to household data by 5x by applying modelling and indexing techniques to DynamoDB to 
       cache OneMap API results.`,

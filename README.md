@@ -14,7 +14,7 @@ My portfolio website written using React, Javascript and Sass.
 
 ## General info
 
-A static page that contains my personal portfolio.
+A Single Page Application that contains my personal portfolio.
 
 ## Screenshots
 

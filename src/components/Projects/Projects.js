@@ -4,7 +4,6 @@ import {
   node,
   mongoDb,
   telegram,
-  heroku,
   express,
   react,
   materialUi,
