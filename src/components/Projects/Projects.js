@@ -31,7 +31,7 @@ export const projects = [
         description: "View the code on Github",
       },
     ],
-    logos: [node, mongoDb, telegram, heroku],
+    logos: [node, mongoDb, telegram],
     screenshot: mahjongCalculator,
   },
   {
@@ -53,7 +53,7 @@ export const projects = [
         description: "Watch the demo video here",
       },
     ],
-    logos: [mongoDb, express, react, node, telegram, materialUi, heroku],
+    logos: [mongoDb, express, react, node, telegram, materialUi],
     screenshot: nusfitness,
   },
   {

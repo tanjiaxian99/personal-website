@@ -32,10 +32,10 @@ const experiences = [
     companyLogo: govtech,
     date: "May 2022 - Jul 2022",
     pointers: [
-      `Developed a shared database of food charities' supports that reduced food wastage by 30% by using React and 
-      DynamoDB to consolidate and display food supports across 100+ food charities.`,
-      `Optimised household address access by 5x by applying modelling and indexing techniques to DynamoDB to cache 
-      OneMap API results.`,
+      `Reduced food wastage amongst food beneficiaries by 20\% by using React and DynamoDB to consolidate and display 
+      aggregated food donations from ~100 food benefactors.`,
+      `Optimised and scaled access to household data by 5x by applying modelling and indexing techniques to DynamoDB to 
+      cache OneMap API results.`,
       `Challenges include working together with 5 other developers on a production codebase, designing NoSQL schemas 
       and evaluating different design paradigms, and communicating and clarifying user requirements with designers and 
       business users.`,

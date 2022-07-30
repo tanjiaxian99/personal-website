@@ -23,6 +23,7 @@ import nodeLogo from "./logos/nodejs.svg";
 import nusLogo from "./logos/nus.svg";
 import pandasLogo from "./logos/pandas.svg";
 import photonLogo from "./logos/photon.png";
+import postgresLogo from "./logos/postgres.svg";
 import pythonLogo from "./logos/python.svg";
 import railsLogo from "./logos/rails.svg";
 import reactLogo from "./logos/react.svg";
@@ -69,7 +70,7 @@ export const jest = { name: "Jest", img: jestLogo };
 export const linkedin = {
   name: "LinkedIn",
   img: linkedinLogo,
-  link: "https://www.linkedin.com/in/jia-xian-tan-5490721a0/",
+  link: "https://www.linkedin.com/in/tanjiaxian99",
 };
 export const materialUi = { name: "Material-UI", img: materialUiLogo };
 export const matplotlib = { name: "Matplotlib", img: matplotlibLogo };
@@ -82,6 +83,7 @@ export const nus = {
 };
 export const pandas = { name: "Pandas", img: pandasLogo };
 export const photon = { name: "Photon", img: photonLogo };
+export const postgres = { name: "PostgreSQL", img: postgresLogo };
 export const python = { name: "Python", img: pythonLogo };
 export const rails = { name: "Rails", img: railsLogo };
 export const react = { name: "React", img: reactLogo };
