@@ -35,7 +35,7 @@ export const projects = [
   },
   {
     title: "NUSFitness",
-    projectUrl: "https://jereldlimjy.github.io/nusfitness/#/",
+    projectUrl: "https://nusfitness.netlify.app/#/",
     date: "May 2021 - July 2021",
     writeup: `NUSFitness is a MERN stack web application and Telegram Bot designed for NUS gym/pool users. The app aims 
     to reduce the frustrations faced by such users due to overcrowding. This is achieved by integrating a booking system, 
@@ -56,7 +56,7 @@ export const projects = [
     screenshot: nusfitness,
   },
   {
-    title: "Singapore Mahjong Game",
+    title: "Online Singapore Mahjong Game",
     date: "May 2020 - Jul 2020",
     writeup: `Singapore Mahjong Game is a multiplayer real-time Mahjong game that is based on Singapore Mahjong rules.
     This project was inspired from the inability to play physical Singapore Mahjong during Singapore's circuit breaker. 

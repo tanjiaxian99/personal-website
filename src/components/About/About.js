@@ -14,8 +14,9 @@ import {
   chakraUi,
   dynamoDb,
   jest,
-  node,
+  css,
   postgres,
+  c,
 } from "../../assets/logos.js";
 import useBreakpointValue from "../../hooks/useBreakpointValue";
 import Icons from "../Icons/Icons.js";
@@ -24,11 +25,11 @@ import styles from "./About.module.scss";
 const skills = [
   {
     title: "languages",
-    logos: [typescript, javascript, python, java],
+    logos: [typescript, javascript, python, java, c],
   },
   {
     title: "frameworks & tools",
-    logos: [react, node, sass, chakraUi, dynamoDb, postgres, jest, git],
+    logos: [react, css, sass, chakraUi, dynamoDb, jest, git, postgres],
   },
 ];
 
@@ -47,11 +48,11 @@ const About = () => {
         >
           <p>
             I am Jia Xian, a penultimate year Computer Science undergraduate at
-            the National University of Singapore (NUS). Since young, I have
-            always had an appetite and aptitude for problem-solving. I find that
-            once I am hooked on to a problem, I cannot let it go until it has
-            been solved. After picking up my first programming language, I found
-            the beauty of programming as a medium to solve problems.
+            National University of Singapore (NUS). Since young, I have always
+            had an appetite and aptitude for problem-solving. I find that once I
+            am hooked on to a problem, I cannot let it go until it has been
+            solved. After picking up my first programming language, I found the
+            beauty of programming as a medium to solve problems.
           </p>
           <br></br>
           <p>

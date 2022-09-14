@@ -32,13 +32,12 @@ const experiences = [
     companyLogo: govtech,
     date: "May 2022 - Jul 2022",
     pointers: [
-      `Reduced food wastage amongst food beneficiaries by 20% by using React and DynamoDB to consolidate and display 
-      aggregated food donations from ~100 food benefactors.`,
-      `Optimised and scaled access to household data by 5x by applying modelling and indexing techniques to DynamoDB to 
-      cache OneMap API results.`,
-      `Challenges include working together with 5 other developers on a production codebase, designing NoSQL schemas 
-      and evaluating different design paradigms, and communicating and clarifying user requirements with designers and 
-      business users.`,
+      `Consolidated and displayed aggregated food donations from ~100 food benefactors by using React and 
+      DynamoDB to build a responsive Frontend view of food beneficiaries that can be sorted and filtered.`,
+      `Optimised and scaled access to household data by 5x by applying modelling and indexing techniques to 
+      DynamoDB to cache OneMap API results.`,
+      `Collaborated with 5 other team members by communicating code logic with other developers and clarifying
+       user requirements with designers and business users.`,
     ],
     logos: [react, typescript, sass, chakraUi, dynamoDb, jest],
   },
@@ -47,8 +46,8 @@ const experiences = [
     companyLogo: nus,
     date: "Aug 2021 - Dec 2021",
     pointers: [
-      `Teach 23 students with another Teaching Assistant to guide students in their lab assignments, answer questions on
-      data structures and algorithms, and give constructive feedback for their work.`,
+      `Improved data structures and algorithms proficiency of 23 students by breaking down difficult 
+      algorithmic concepts and illustrating the workings of algorithms in a step-by-step process.`,
     ],
     logos: [java],
   },
@@ -57,11 +56,12 @@ const experiences = [
     companyLogo: dsta,
     date: "Jan 2020 - Mar 2020",
     pointers: [
-      `Increased Navy ship engine fault detection rate by 45% through analyzing existing Navy Ship engine data using 
-      Pandas and scikit-learn to develop a statistical model that predicts ship engine faults.`,
-      `Challenges include writing a Python script that optimally searches for anomalies within hundreds of millions of 
-      rows of data, selecting relevant ship engine sensors that correlate with the specified faults, and using 
-      Matplotlib to stitch together various time-series graphs.`,
+      `Increased Navy ship engine fault detection rate by 25% through analyzing existing Navy Ship engine data 
+      using Pandas and scikit-learn to develop a statistical model that predicts ship engine faults.`,
+      `Processed hundreds of millions of rows of data by writing a Python script that optimally searches for 
+      anomalous ship sensor data.`,
+      `Consulted 4 naval engineers to sieve through ~150 ship engine sensors and select the relevant sensors that
+       may correlate with ship engine faults.`,
     ],
     logos: [python, pandas, matplotlib, scikitLearn],
   },
