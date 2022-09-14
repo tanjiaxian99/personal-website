@@ -6,8 +6,12 @@ import styles from "./Header.module.scss";
 
 const Header = ({ setHeaderInView }) => {
   useLayoutEffect(() => {
-    document.getElementById("home").style.height =
-      window.innerHeight + 1 + "px";
+    const updateHeight = () =>
+      (document.getElementById("home").style.height =
+        window.innerHeight + 1 + "px");
+    window.addEventListener("resize", updateHeight);
+    updateHeight();
+    return () => window.removeEventListener("resize", updateHeight);
   }, []);
 
   return (
