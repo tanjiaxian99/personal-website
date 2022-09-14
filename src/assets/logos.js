@@ -6,6 +6,7 @@ import cSharpLogo from "./logos/c-sharp.svg";
 import dstaLogo from "./logos/dsta.png";
 import dynamoDbLogo from "./logos/dynamoDb.png";
 import emailLogo from "./logos/email.svg";
+import enzymeLogo from "./logos/enzyme.png";
 import expressLogo from "./logos/express.svg";
 import gitLogo from "./logos/git.svg";
 import githubLogo from "./logos/github.svg";
@@ -13,8 +14,10 @@ import govtechLogo from "./logos/govtech.gif";
 import herokuLogo from "./logos/heroku.svg";
 import htmlLogo from "./logos/html-5.svg";
 import javaLogo from "./logos/java.svg";
+import javafxLogo from "./logos/javafx.png";
 import javascriptLogo from "./logos/javascript.svg";
 import jestLogo from "./logos/jest.svg";
+import junit5Logo from "./logos/junit5.png";
 import linkedinLogo from "./logos/linkedin.svg";
 import materialUiLogo from "./logos/material-ui.svg";
 import matplotlibLogo from "./logos/matplotlib.svg";
@@ -50,9 +53,11 @@ export const email = {
   img: emailLogo,
   link: "mailto: tanjiaxian99@u.nus.edu",
 };
+export const enzyme = { name: "Enzyme", img: enzymeLogo };
 export const express = { name: "Express", img: expressLogo };
 export const git = { name: "Git", img: gitLogo };
-export const github = {
+export const github = { name: "GitHub", img: githubLogo };
+export const githubClickable = {
   name: "GitHub",
   img: githubLogo,
   link: "https://github.com/tanjiaxian99",
@@ -65,8 +70,10 @@ export const govtech = {
 export const heroku = { name: "Heroku", img: herokuLogo };
 export const html = { name: "HTML", img: htmlLogo };
 export const java = { name: "Java", img: javaLogo };
+export const javafx = { name: "JavaFX", img: javafxLogo };
 export const javascript = { name: "Javascript", img: javascriptLogo };
 export const jest = { name: "Jest", img: jestLogo };
+export const junit5 = { name: "JUnit5", img: junit5Logo };
 export const linkedin = {
   name: "LinkedIn",
   img: linkedinLogo,

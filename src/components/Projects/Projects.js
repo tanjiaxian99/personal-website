@@ -1,6 +1,11 @@
 import React from "react";
 import Project from "./Project";
 import {
+  java,
+  javafx,
+  junit5,
+  git,
+  github,
   node,
   mongoDb,
   telegram,
@@ -11,12 +16,31 @@ import {
   unity,
   photon,
 } from "../../assets/logos.js";
+import csbook from "../../assets/images/csbook-mockup.png";
 import mahjongCalculator from "../../assets/images/mahjong-calculator-mockup.png";
 import nusfitness from "../../assets/images/nusfitness-mockup.png";
 import mahjong from "../../assets/images/mahjong-mockup.png";
 import styles from "./Projects.module.scss";
 
 export const projects = [
+  {
+    title: "CSBook",
+    projectUrl:
+      "https://github.com/AY2122S1-CS2103T-T09-3/tp/releases/tag/v1.4",
+    date: "Aug 2021 - Nov 2021",
+    writeup: `CSBook is a desktop app for Computer Science Teaching Assistants to manage their students. 
+    It is optimized for use via a Command Line Interface while still having the benefits of a Graphical User 
+    Interface. If you are faster at typing, CSBook can get your student management tasks done faster than 
+    traditional GUI applications.`,
+    urls: [
+      {
+        url: "https://github.com/AY2122S1-CS2103T-T09-3/tp",
+        description: "View the code on Github",
+      },
+    ],
+    logos: [java, javafx, junit5, git, github],
+    screenshot: csbook,
+  },
   {
     title: "Mahjong Calculator Bot",
     projectUrl: "https://t.me/MahjongCalculator_Bot",

@@ -1,7 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import {
-  github,
+  githubClickable,
   linkedin,
   email,
   javascript,
@@ -14,6 +14,7 @@ import {
   chakraUi,
   dynamoDb,
   jest,
+  enzyme,
   css,
   postgres,
   c,
@@ -29,7 +30,7 @@ const skills = [
   },
   {
     title: "frameworks & tools",
-    logos: [react, css, sass, chakraUi, dynamoDb, jest, git, postgres],
+    logos: [react, css, sass, chakraUi, dynamoDb, jest, enzyme, git, postgres],
   },
 ];
 
@@ -63,7 +64,7 @@ const About = () => {
             world, and it is my hope that one day, I am sufficiently capable to
             solve one of them.
           </p>
-          <Icons icons={[github, linkedin, email]} />
+          <Icons icons={[githubClickable, linkedin, email]} />
         </div>
       </div>
       <div

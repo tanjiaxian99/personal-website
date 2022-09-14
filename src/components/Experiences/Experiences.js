@@ -23,6 +23,7 @@ import {
   chakraUi,
   dynamoDb,
   jest,
+  enzyme,
 } from "../../assets/logos.js";
 import styles from "./Experiences.module.scss";
 
@@ -39,7 +40,7 @@ const experiences = [
       `Collaborated with 5 other team members by communicating code logic with other developers and clarifying
        user requirements with designers and business users.`,
     ],
-    logos: [react, typescript, sass, chakraUi, dynamoDb, jest],
+    logos: [react, typescript, sass, chakraUi, dynamoDb, jest, enzyme],
   },
   {
     title: "Data Structures and Algorithms Teaching Assistant",
