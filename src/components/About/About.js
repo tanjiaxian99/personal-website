@@ -11,13 +11,15 @@ import {
   git,
   typescript,
   sass,
-  chakraUi,
   dynamoDb,
   jest,
-  enzyme,
   css,
   postgres,
   c,
+  golang,
+  docker,
+  grpc,
+  gitlab,
 } from "../../assets/logos.js";
 import useBreakpointValue from "../../hooks/useBreakpointValue";
 import Icons from "../Icons/Icons.js";
@@ -26,11 +28,22 @@ import styles from "./About.module.scss";
 const skills = [
   {
     title: "languages",
-    logos: [typescript, javascript, python, java, c],
+    logos: [golang, typescript, javascript, python, java, c],
   },
   {
     title: "frameworks & tools",
-    logos: [react, css, sass, chakraUi, dynamoDb, jest, enzyme, git, postgres],
+    logos: [
+      docker,
+      grpc,
+      react,
+      css,
+      sass,
+      dynamoDb,
+      jest,
+      git,
+      gitlab,
+      postgres,
+    ],
   },
 ];
 

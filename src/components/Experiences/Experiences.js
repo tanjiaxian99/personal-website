@@ -24,10 +24,32 @@ import {
   dynamoDb,
   jest,
   enzyme,
+  grab,
+  docker,
+  golang,
+  grpc,
+  wireshark,
+  gitlab,
 } from "../../assets/logos.js";
 import styles from "./Experiences.module.scss";
 
 const experiences = [
+  {
+    title: "Backend Engineer Intern",
+    companyLogo: grab,
+    date: "May 2022 - Jul 2022",
+    pointers: [
+      `Streamlined service onboarding process by 4 hours using Golang and Docker to automate and optimise 
+      information retrieval from Grab's staging environment, thereby eliminating the human errors that were 
+      previously encountered in the manual process.`,
+      `Diagnosed and resolved a gRPC client bug that disrupted a tool's functionality in 3 services by using
+       Wireshark to intercept gRPC calls to an upstream service and analyse gRPC unary interceptors.`,
+      `Increased test coverage by 22.78% using Go 1.20 to set up a testing infrastructure to automatically 
+      execute integration tests and calculate code coverage across multiple tools both locally and on CI, 
+      ensuring the integrity of the tools and the reliability of the deployments.`,
+    ],
+    logos: [golang, docker, grpc, wireshark, gitlab],
+  },
   {
     title: "Software Engineer Intern",
     companyLogo: govtech,
