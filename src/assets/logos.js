@@ -3,6 +3,7 @@ import cLogo from "./logos/c.svg";
 import chakraUiLogo from "./logos/chakra-ui.png";
 import cssLogo from "./logos/css-3.svg";
 import cSharpLogo from "./logos/c-sharp.svg";
+import dockerLogo from "./logos/docker.svg";
 import dstaLogo from "./logos/dsta.png";
 import dynamoDbLogo from "./logos/dynamoDb.png";
 import emailLogo from "./logos/email.svg";
@@ -10,7 +11,11 @@ import enzymeLogo from "./logos/enzyme.png";
 import expressLogo from "./logos/express.svg";
 import gitLogo from "./logos/git.svg";
 import githubLogo from "./logos/github.svg";
+import gitlabLogo from "./logos/gitlab.svg";
+import golangLogo from "./logos/golang.svg";
 import govtechLogo from "./logos/govtech.gif";
+import grabLogo from "./logos/grab.svg";
+import grpcLogo from "./logos/grpc.svg";
 import herokuLogo from "./logos/heroku.svg";
 import htmlLogo from "./logos/html-5.svg";
 import javaLogo from "./logos/java.svg";
@@ -36,6 +41,7 @@ import scikitLearnLogo from "./logos/scikit-learn.svg";
 import telegramLogo from "./logos/telegram.svg";
 import typescriptLogo from "./logos/typescript.svg";
 import unityLogo from "./logos/unity.svg";
+import wiresharkLogo from "./logos/wireshark.svg";
 
 export const antDesign = { name: "Ant Design", img: antDesignLogo };
 export const c = { name: "C", img: cLogo };
@@ -43,6 +49,7 @@ export const chakraUi = { name: "Chakra UI", img: chakraUiLogo };
 export const css = { name: "CSS", img: cssLogo };
 export const cSharp = { name: "C#", img: cSharpLogo };
 export const dynamoDb = { name: "DynamoDB", img: dynamoDbLogo };
+export const docker = { name: "Docker", img: dockerLogo };
 export const dsta = {
   name: "DSTA",
   img: dstaLogo,
@@ -62,11 +69,19 @@ export const githubClickable = {
   img: githubLogo,
   link: "https://github.com/tanjiaxian99",
 };
+export const gitlab = { name: "GitLab", img: gitlabLogo };
+export const golang = { name: "Golang", img: golangLogo };
 export const govtech = {
   name: "GovTech",
   img: govtechLogo,
   link: "https://www.tech.gov.sg/",
 };
+export const grab = {
+  name: "Grab",
+  img: grabLogo,
+  link: "https://www.grab.com/sg/",
+};
+export const grpc = { name: "gRPC", img: grpcLogo };
 export const heroku = { name: "Heroku", img: herokuLogo };
 export const html = { name: "HTML", img: htmlLogo };
 export const java = { name: "Java", img: javaLogo };
@@ -100,3 +115,4 @@ export const scikitLearn = { name: "scikit-learn", img: scikitLearnLogo };
 export const telegram = { name: "Telegram Bot API", img: telegramLogo };
 export const typescript = { name: "Typescript", img: typescriptLogo };
 export const unity = { name: "Unity3D", img: unityLogo };
+export const wireshark = { name: "Wireshark", img: wiresharkLogo };
