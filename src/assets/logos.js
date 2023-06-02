@@ -29,6 +29,7 @@ import matplotlibLogo from "./logos/matplotlib.svg";
 import mongoDbLogo from "./logos/mongodb.png";
 import nodeLogo from "./logos/nodejs.svg";
 import nusLogo from "./logos/nus.svg";
+import opentracingLogo from "./logos/opentracing.svg";
 import pandasLogo from "./logos/pandas.svg";
 import photonLogo from "./logos/photon.png";
 import postgresLogo from "./logos/postgres.svg";
@@ -103,6 +104,7 @@ export const nus = {
   img: nusLogo,
   link: "https://www.nus.edu.sg/",
 };
+export const opentracing = { name: "OpenTracing", img: opentracingLogo };
 export const pandas = { name: "Pandas", img: pandasLogo };
 export const photon = { name: "Photon", img: photonLogo };
 export const postgres = { name: "PostgreSQL", img: postgresLogo };
