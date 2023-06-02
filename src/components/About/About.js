@@ -56,7 +56,7 @@ const About = () => {
   return (
     <section className={styles.container} id="about" ref={ref}>
       <div className={styles.writeup}>
-        <h2>about.</h2>
+        <h2>about. 🎓</h2>
         <div
           className={`${styles.slide} ${!inView && styles.slideRightHidden}`}
         >
@@ -86,7 +86,7 @@ const About = () => {
           (desktopView ? styles.slideLeftHidden : styles.slideRightHidden)
         }`}
       >
-        <h2>skills.</h2>
+        <h2>skills. ⚙️</h2>
         <div>
           {skills.map((skillType) => (
             <>

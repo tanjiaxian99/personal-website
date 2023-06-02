@@ -30,6 +30,7 @@ import {
   grpc,
   wireshark,
   gitlab,
+  opentracing,
 } from "../../assets/logos.js";
 import styles from "./Experiences.module.scss";
 
@@ -48,7 +49,7 @@ const experiences = [
       execute integration tests and calculate code coverage across multiple tools both locally and on CI, 
       ensuring the integrity of the tools and the reliability of the deployments.`,
     ],
-    logos: [golang, docker, grpc, wireshark, gitlab],
+    logos: [golang, docker, opentracing, grpc, wireshark, gitlab],
   },
   {
     title: "Software Engineer Intern",
@@ -99,7 +100,7 @@ const Experiences = () => {
   return (
     <section id="experiences" ref={ref}>
       <div className={`${styles.container}`}>
-        <h2>experiences.</h2>
+        <h2>experiences. ⚗️</h2>
 
         {!desktopView && (
           <div

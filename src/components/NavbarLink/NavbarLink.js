@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import useBreakpointValue from "../../hooks/useBreakpointValue";
 import styles from "./NavbarLink.module.scss";
 
-const NavbarLink = ({ link }) => {
+const NavbarLink = ({ name, link }) => {
   const offset = useBreakpointValue({ base: -50, desktop: -30 });
 
   return (
@@ -16,7 +16,7 @@ const NavbarLink = ({ link }) => {
       offset={offset}
       className={styles.link}
     >
-      {link}.
+      {name ? name : link}.
     </Link>
   );
 };

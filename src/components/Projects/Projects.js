@@ -15,14 +15,32 @@ import {
   cSharp,
   unity,
   photon,
+  javascript,
+  sass,
 } from "../../assets/logos.js";
 import csbook from "../../assets/images/csbook-mockup.png";
 import mahjongCalculator from "../../assets/images/mahjong-calculator-mockup.png";
 import nusfitness from "../../assets/images/nusfitness-mockup.png";
 import mahjong from "../../assets/images/mahjong-mockup.png";
+import website from "../../assets/images/portfolio-website-mockup.png";
 import styles from "./Projects.module.scss";
 
 export const projects = [
+  {
+    title: "Portfolio Website",
+    projectUrl: "https://www.tanjiaxian99.com/",
+    date: "Jun 2022 - Jul 2022",
+    writeup: `A portfolio website that aims to be a responsive and animated version of my resume. It is designed
+    with 6 custom text and page animations, as well as abstracted CSS transitions that are reusable across pages.`,
+    urls: [
+      {
+        url: "https://github.com/tanjiaxian99/personal-website",
+        description: "View the code on Github",
+      },
+    ],
+    logos: [react, javascript, sass],
+    screenshot: website,
+  },
   {
     title: "CSBook",
     projectUrl:
@@ -101,7 +119,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className={styles.container}>
-      <h2>projects.</h2>
+      <h2>projects. 🛠️</h2>
       <div className={styles.projects}>
         {projects.map((project, i) => (
           <Project

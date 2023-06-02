@@ -24,7 +24,7 @@ const Navbar = ({ headerInView }) => {
             headerInView && styles.fadeHidden
           }`}
         >
-          <p>Jia Xian.</p>
+          <NavbarLink name="Jia Xian" link="home" />
           {!desktopView && (
             <Hamburger rounded toggled={isOpen} toggle={setOpen} />
           )}
