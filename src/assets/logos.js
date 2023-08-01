@@ -1,7 +1,10 @@
 import antDesignLogo from "./logos/ant-design.svg";
+import apacheLogo from "./logos/apache.svg";
 import cLogo from "./logos/c.svg";
 import chakraUiLogo from "./logos/chakra-ui.png";
+import creditSuisseLogo from "./logos/credit-suisse.svg";
 import cssLogo from "./logos/css-3.svg";
+import cPlusPlusLogo from "./logos/c-plus-plus.svg";
 import cSharpLogo from "./logos/c-sharp.svg";
 import dockerLogo from "./logos/docker.svg";
 import dstaLogo from "./logos/dsta.png";
@@ -9,6 +12,7 @@ import dynamoDbLogo from "./logos/dynamoDb.png";
 import emailLogo from "./logos/email.svg";
 import enzymeLogo from "./logos/enzyme.png";
 import expressLogo from "./logos/express.svg";
+import f5Logo from "./logos/f5.svg";
 import gitLogo from "./logos/git.svg";
 import githubLogo from "./logos/github.svg";
 import gitlabLogo from "./logos/gitlab.svg";
@@ -16,6 +20,7 @@ import golangLogo from "./logos/golang.svg";
 import govtechLogo from "./logos/govtech.gif";
 import grabLogo from "./logos/grab.svg";
 import grpcLogo from "./logos/grpc.svg";
+import haproxyLogo from "./logos/haproxy.svg";
 import herokuLogo from "./logos/heroku.svg";
 import htmlLogo from "./logos/html-5.svg";
 import javaLogo from "./logos/java.svg";
@@ -23,12 +28,16 @@ import javafxLogo from "./logos/javafx.png";
 import javascriptLogo from "./logos/javascript.svg";
 import jestLogo from "./logos/jest.svg";
 import junit5Logo from "./logos/junit5.png";
+import kubernetesLogo from "./logos/kubernetes.svg";
 import linkedinLogo from "./logos/linkedin.svg";
+import linuxLogo from "./logos/linux.svg";
 import materialUiLogo from "./logos/material-ui.svg";
 import matplotlibLogo from "./logos/matplotlib.svg";
 import mongoDbLogo from "./logos/mongodb.png";
 import nodeLogo from "./logos/nodejs.svg";
 import nusLogo from "./logos/nus.svg";
+import openshiftLogo from "./logos/openshift.svg";
+import opensslLogo from "./logos/openssl.svg";
 import opentracingLogo from "./logos/opentracing.svg";
 import pandasLogo from "./logos/pandas.svg";
 import photonLogo from "./logos/photon.png";
@@ -42,12 +51,20 @@ import scikitLearnLogo from "./logos/scikit-learn.svg";
 import telegramLogo from "./logos/telegram.svg";
 import typescriptLogo from "./logos/typescript.svg";
 import unityLogo from "./logos/unity.svg";
+import vaultLogo from "./logos/vault.svg";
 import wiresharkLogo from "./logos/wireshark.svg";
 
 export const antDesign = { name: "Ant Design", img: antDesignLogo };
+export const apacheFtp = { name: "Apache FTP", img: apacheLogo };
 export const c = { name: "C", img: cLogo };
 export const chakraUi = { name: "Chakra UI", img: chakraUiLogo };
+export const creditSuisse = {
+  name: "Credit Suisse",
+  img: creditSuisseLogo,
+  link: "https://www.credit-suisse.com/sg/en.html",
+};
 export const css = { name: "CSS", img: cssLogo };
+export const cPlusPlus = { name: "C++", img: cPlusPlusLogo };
 export const cSharp = { name: "C#", img: cSharpLogo };
 export const dynamoDb = { name: "DynamoDB", img: dynamoDbLogo };
 export const docker = { name: "Docker", img: dockerLogo };
@@ -63,6 +80,7 @@ export const email = {
 };
 export const enzyme = { name: "Enzyme", img: enzymeLogo };
 export const express = { name: "Express", img: expressLogo };
+export const f5LoadBalancer = { name: "F5 Load Balancer", img: f5Logo };
 export const git = { name: "Git", img: gitLogo };
 export const github = { name: "GitHub", img: githubLogo };
 export const githubClickable = {
@@ -83,6 +101,7 @@ export const grab = {
   link: "https://www.grab.com/sg/",
 };
 export const grpc = { name: "gRPC", img: grpcLogo };
+export const haproxy = { name: "HAProxy", img: haproxyLogo };
 export const heroku = { name: "Heroku", img: herokuLogo };
 export const html = { name: "HTML", img: htmlLogo };
 export const java = { name: "Java", img: javaLogo };
@@ -90,11 +109,13 @@ export const javafx = { name: "JavaFX", img: javafxLogo };
 export const javascript = { name: "Javascript", img: javascriptLogo };
 export const jest = { name: "Jest", img: jestLogo };
 export const junit5 = { name: "JUnit5", img: junit5Logo };
+export const kubernetes = { name: "Kubernetes", img: kubernetesLogo };
 export const linkedin = {
   name: "LinkedIn",
   img: linkedinLogo,
   link: "https://www.linkedin.com/in/tanjiaxian99",
 };
+export const linux = { name: "Linux", img: linuxLogo };
 export const materialUi = { name: "Material-UI", img: materialUiLogo };
 export const matplotlib = { name: "Matplotlib", img: matplotlibLogo };
 export const mongoDb = { name: "MongoDB", img: mongoDbLogo };
@@ -104,6 +125,8 @@ export const nus = {
   img: nusLogo,
   link: "https://www.nus.edu.sg/",
 };
+export const openshift = { name: "OpenShift", img: openshiftLogo };
+export const openssl = { name: "OpenSSL", img: opensslLogo };
 export const opentracing = { name: "OpenTracing", img: opentracingLogo };
 export const pandas = { name: "Pandas", img: pandasLogo };
 export const photon = { name: "Photon", img: photonLogo };
@@ -117,4 +140,5 @@ export const scikitLearn = { name: "scikit-learn", img: scikitLearnLogo };
 export const telegram = { name: "Telegram Bot API", img: telegramLogo };
 export const typescript = { name: "Typescript", img: typescriptLogo };
 export const unity = { name: "Unity3D", img: unityLogo };
+export const vault = { name: "Vault", img: vaultLogo };
 export const wireshark = { name: "Wireshark", img: wiresharkLogo };
