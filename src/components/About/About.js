@@ -13,8 +13,6 @@ import {
   sass,
   dynamoDb,
   jest,
-  css,
-  postgres,
   c,
   golang,
   docker,
