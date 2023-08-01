@@ -17,8 +17,11 @@ import {
   photon,
   javascript,
   sass,
+  cPlusPlus,
+  linux,
 } from "../../assets/logos.js";
 import csbook from "../../assets/images/csbook-mockup.png";
+import eventLoop from "../../assets/images/event-loop.png";
 import mahjongCalculator from "../../assets/images/mahjong-calculator-mockup.png";
 import nusfitness from "../../assets/images/nusfitness-mockup.png";
 import mahjong from "../../assets/images/mahjong-mockup.png";
@@ -27,11 +30,29 @@ import styles from "./Projects.module.scss";
 
 export const projects = [
   {
+    title: "C++ Event-driven HTTP Server",
+    date: "Jul 2023 - Jul 2023",
+    writeup: `A C++ single-threaded event-driven HTTP Server using an edge-triggered epoll loop with non-blocking IO. 
+    I did the project to learn about C++ development in a project environment, as well as to explore Node.js' event loop 
+    construct. The result is a fully functional HTTP server capable of servicing 10,000 concurrent connections and
+    10,000 queries per second.`,
+    urls: [
+      {
+        url: "https://github.com/tanjiaxian99/http-server",
+        description: "View the code on Github",
+      },
+    ],
+    logos: [cPlusPlus, linux],
+    screenshot: eventLoop,
+  },
+  {
     title: "Portfolio Website",
     projectUrl: "https://www.tanjiaxian99.com/",
     date: "Jun 2022 - Jul 2022",
-    writeup: `A portfolio website that aims to be a responsive and animated version of my resume. It is designed
-    with 6 custom text and page animations, as well as abstracted CSS transitions that are reusable across pages.`,
+    writeup: `My portfolio website that aims to be a responsive and animated version of my resume. It is designed
+    with 6 custom text and page animations, as well as abstracted CSS transitions that are reusable across pages. After 
+    my internship with GovTech, I took my learnings on Frontend project design and refactored the codebase to make it 
+    easier to maintain.`,
     urls: [
       {
         url: "https://github.com/tanjiaxian99/personal-website",

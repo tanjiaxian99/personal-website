@@ -28,7 +28,7 @@ const Header = ({ setHeaderInView }) => {
           />
           <div className={styles.text}>
             <p className={styles.name}>Tan Jia Xian</p>
-            <p>Computer Science, Year 3</p>
+            <p>Computer Science, Year 4</p>
             <p>National University of Singapore (NUS)</p>
           </div>
           <ScrollDown />

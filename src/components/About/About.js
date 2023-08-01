@@ -20,6 +20,9 @@ import {
   docker,
   grpc,
   gitlab,
+  cPlusPlus,
+  mongoDb,
+  kubernetes,
 } from "../../assets/logos.js";
 import useBreakpointValue from "../../hooks/useBreakpointValue";
 import Icons from "../Icons/Icons.js";
@@ -28,21 +31,21 @@ import styles from "./About.module.scss";
 const skills = [
   {
     title: "languages",
-    logos: [golang, typescript, javascript, python, java, c],
+    logos: [cPlusPlus, golang, typescript, javascript, python, java, c],
   },
   {
     title: "frameworks & tools",
     logos: [
       docker,
       grpc,
-      react,
-      css,
-      sass,
+      mongoDb,
       dynamoDb,
+      kubernetes,
+      react,
+      sass,
       jest,
       git,
       gitlab,
-      postgres,
     ],
   },
 ];
@@ -61,7 +64,7 @@ const About = () => {
           className={`${styles.slide} ${!inView && styles.slideRightHidden}`}
         >
           <p>
-            I am Jia Xian, a penultimate year Computer Science undergraduate at
+            I am Jia Xian, a final year Computer Science undergraduate at
             National University of Singapore (NUS). Since young, I have always
             had an appetite and aptitude for problem-solving. I find that once I
             am hooked on to a problem, I cannot let it go until it has been

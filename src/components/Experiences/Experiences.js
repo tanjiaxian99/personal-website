@@ -31,14 +31,51 @@ import {
   wireshark,
   gitlab,
   opentracing,
+  creditSuisse,
+  openshift,
+  kubernetes,
+  apacheFtp,
+  mongoDb,
+  openssl,
+  vault,
+  haproxy,
+  f5LoadBalancer,
 } from "../../assets/logos.js";
 import styles from "./Experiences.module.scss";
 
 const experiences = [
   {
+    title: "Technology Summer Analyst",
+    companyLogo: creditSuisse,
+    date: "May 2023 - Jul 2023",
+    pointers: [
+      `Decrease network latency by 81.60% by using OpenShift to connect existing microservices on different 
+      namespaces using OpenShift internal network and network policies.`,
+      `Eliminate the use of 8 virtual machines and save hundreds of thousands of dollars by migrating an FTP 
+      server to OpenShift, all while maintaining existing file transfer and persistent storage capabilities.`,
+      `Increased fault tolerance and load balancing capabilities by 2x thorough doubling mongos instances 
+      from 4 to 8 by using OpenShift, Docker and MongoDB Agent to write a custom Dockerfile and adopt mongos 
+      as a sidecar to an existing microservice on OpenShift.`,
+      `Presented and engaged 100+ participants by doing a 12-minute presentation and a Q&A session on the 3 
+      projects that I worked on during the internship.`,
+    ],
+    logos: [
+      openshift,
+      kubernetes,
+      docker,
+      apacheFtp,
+      mongoDb,
+      openssl,
+      vault,
+      haproxy,
+      f5LoadBalancer,
+      gitlab,
+    ],
+  },
+  {
     title: "Backend Engineer Intern",
     companyLogo: grab,
-    date: "May 2022 - Jul 2022",
+    date: "Jan 2023 - May 2023",
     pointers: [
       `Streamlined service onboarding process by 4 hours using Golang and Docker to automate and optimise 
       information retrieval from Grab's staging environment, thereby eliminating the human errors that were 
