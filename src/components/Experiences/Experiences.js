@@ -53,7 +53,7 @@ const experiences = [
       namespaces using OpenShift internal network and network policies.`,
       `Eliminate the use of 8 virtual machines and save hundreds of thousands of dollars by migrating an FTP 
       server to OpenShift, all while maintaining existing file transfer and persistent storage capabilities.`,
-      `Increased fault tolerance and load balancing capabilities by 2x thorough doubling mongos instances 
+      `Increased fault tolerance and load balancing capabilities by 2x through doubling mongos instances 
       from 4 to 8 by using OpenShift, Docker and MongoDB Agent to write a custom Dockerfile and adopt mongos 
       as a sidecar to an existing microservice on OpenShift.`,
       `Presented and engaged 100+ participants by doing a 12-minute presentation and a Q&A session on the 3 
@@ -77,14 +77,13 @@ const experiences = [
     companyLogo: grab,
     date: "Jan 2023 - May 2023",
     pointers: [
-      `Streamlined service onboarding process by 4 hours using Golang and Docker to automate and optimise 
-      information retrieval from Grab's staging environment, thereby eliminating the human errors that were 
-      previously encountered in the manual process.`,
+      `Eliminated human errors and streamlined services' onboarding process by 4 hours using Golang and Docker 
+      to automate and optimise information retrieval from Grab's staging environment.`,
       `Diagnosed and resolved a gRPC client bug that disrupted a tool's functionality in 3 services by using
        Wireshark to intercept gRPC calls to an upstream service and analyse gRPC unary interceptors.`,
-      `Increased test coverage by 22.78% using Go 1.20 to set up a testing infrastructure to automatically 
-      execute integration tests and calculate code coverage across multiple tools both locally and on CI, 
-      ensuring the integrity of the tools and the reliability of the deployments.`,
+      `Increased test coverage by 22.78% and ensured the integrity of tools and the reliability of deployments 
+      by using Go 1.20 to set up a testing infrastructure to automatically execute integration tests and 
+      calculate code coverage across multiple tools on local dev and CI.`,
     ],
     logos: [golang, docker, opentracing, grpc, wireshark, gitlab],
   },
@@ -93,7 +92,7 @@ const experiences = [
     companyLogo: govtech,
     date: "May 2022 - Jul 2022",
     pointers: [
-      `Consolidated and displayed aggregated food donations from ~100 food benefactors by using React and 
+      `Consolidated and displayed aggregated food donations from ~100 food benefactors by using React, TypeScript and 
       DynamoDB to build a responsive Frontend view of food beneficiaries that can be sorted and filtered.`,
       `Optimised and scaled access to household data by 5x by applying modelling and indexing techniques to 
       DynamoDB to cache OneMap API results.`,
